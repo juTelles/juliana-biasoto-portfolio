@@ -3,7 +3,7 @@ import react, { useState } from 'react';
 import NavNotes from '../navnotes/NavNotes';
 import styles from './styles.module.css'
 
-function Nav({ resume, about, portfolio, home, fromHome }) {
+function NavBar({ resume, about, portfolio, home, fromHome }) {
   return (
     <nav className={fromHome? styles.nav : styles.navHome}>
       <NavNotes
@@ -16,4 +16,4 @@ function Nav({ resume, about, portfolio, home, fromHome }) {
   );
 }
 
-export default Nav;
+export default NavBar;

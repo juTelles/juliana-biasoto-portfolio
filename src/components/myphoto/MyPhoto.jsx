@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import react from 'react';
-import myPhoto from './../img/pollaroid-ju.png';
+import myPhoto from '../../img/pollaroid-ju.png';
 import styles from './styles.module.css';
 
 function MyPhoto() {

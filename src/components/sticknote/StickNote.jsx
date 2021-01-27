@@ -7,7 +7,7 @@ function StickNote( { text, color, className } ) {
     <div className={styles.stickNoteDiv} >
       <div className={styles.stickNote} style={{backgroundColor: color}}>
         <div className={styles.stickNoteGlue}></div>
-        <p className=[noteText">{text}</p>
+        <p className="noteText">{text}</p>
       </div>
     </div>
   );

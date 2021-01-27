@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import react, { useEffect, useState } from 'react';
-import NavBar from '../NavBar';
-import MyPhoto from '../MyPhoto';
+import NavBar from '../navbar/NavBar';
+import MyPhoto from '../myphoto/MyPhoto';
 import styles from './styles.module.css';
 
 

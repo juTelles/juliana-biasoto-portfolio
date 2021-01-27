@@ -1,2 +1,31 @@
-
-
+/* Sticker component styles */
+.stickerDiv {
+  width: 30vw;
+  max-width: 140px;
+  margin: 0px 0px 10px 10px;
+  padding: 3px;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  transform: rotate(-10deg);
+}
+.stickerDiv:hover {
+  width: 35vw;
+}
+.sticker {
+  background: #f5f5f5;
+  border-radius: 25px;
+  border: solid 3px #0a0a0a;
+  padding: 2px 3px;
+}
+.text {
+  font-weight: bolder;
+  color: #000000;
+  font-family: 'Fascinate', cursive;
+  font-size: 20px;
+}
+.text:hover {
+  font-size: 25px;
+}

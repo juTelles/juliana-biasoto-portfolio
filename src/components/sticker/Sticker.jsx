@@ -5,9 +5,9 @@ import styles from './styles.module.css';
 
 function Sticker( { text, className } ) {
   return (
-    <div className={`sticker-div ${className}`} >
-      <div className="sticker">
-        <p className="text">{text}</p>
+    <div className={styles.stickerDiv} >
+      <div className={styles.sticker}>
+        <p className={styles.text}>{text}</p>
       </div>
     </div>
   );

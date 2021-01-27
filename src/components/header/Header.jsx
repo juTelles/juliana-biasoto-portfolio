@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import react, { useEffect, useState } from 'react';
-import NavBar from '../navbar/Nav';
+import NavBar from '../navbar/NavBar';
 import Title from '../title/Title';
 import styles from './styles.module.css';
 
