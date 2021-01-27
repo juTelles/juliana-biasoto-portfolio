@@ -1,0 +1,17 @@
+/* Title component styles */
+
+.titleDiv {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 300px;
+  max-height: 60px;
+  margin: 40px 10px 0px 20px;
+}
+.titleText {
+  font-family: 'Special Elite';
+  font-size: 40px;
+  color: #1d1209;
+}

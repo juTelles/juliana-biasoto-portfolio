@@ -1,0 +1,7 @@
+.div {
+  margin: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 90%;
+}
