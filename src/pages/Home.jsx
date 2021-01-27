@@ -1,14 +1,14 @@
 import './../styles/home.css';
 import HomeHeader from '../components/home/HomeHeader';
 import MainSection from './../components/home/MainSection';
-import Sticker from '../components/Sticker';
+import Footer from '../components/footer/Footer';
 
 function Home() {
   return (
     <main>
       <HomeHeader/>
       <MainSection/>
-      <Sticker text="Contato"/>
+      <Footer/>
     </main>
   );
 }

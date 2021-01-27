@@ -1,9 +1,12 @@
-import Header from '../components/Header';
+import Footer from '../components/footer/Footer';
+import Header from '../components/header/Header';
 
 function portfolio() {
   return (
     <main>
-      <Header text="Sobre Mim" />
+      <Header text="Portfolio" className="portfolio-header" home about resume />
+
+      <Footer />
     </main>
   );
 }
