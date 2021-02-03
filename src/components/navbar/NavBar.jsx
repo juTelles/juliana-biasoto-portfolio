@@ -3,14 +3,15 @@ import react, { useState } from 'react';
 import NavNotes from '../navnotes/NavNotes';
 import styles from './styles.module.css'
 
-function NavBar({ resume, about, portfolio, home, fromHome }) {
+function NavBar({ resume, about, portfolio, home, isHome }) {
   return (
-    <nav className={fromHome? styles.nav : styles.navHome}>
+    <nav className={isHome? styles.navBarHome : styles.navBar}>
       <NavNotes
         resume={resume}
         about={about}
         portfolio={portfolio}
         home={home}
+        isHome={isHome}
       />
     </nav>
   );

@@ -1,16 +1,13 @@
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
-import './../styles/resume.css';
+import ResumeMain from '../components/resume-main/ResumeMain';
 
 function Resume() {
   return (
     <main>
-      <Header text="Currículo" className="resume-header" home portfolio about />
-
+      <Header text="Currículo" className="resume-header" />
+      <ResumeMain inMainSection home portfolio about />
       <Footer />
-      <div className="resume-div">
-        <div className="resume"></div>
-      </div>
     </main>
   );
 }

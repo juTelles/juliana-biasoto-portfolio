@@ -1,5 +1,7 @@
 .navBar {
-  margin: 0px;
   display: flex;
   justify-content: center;
+}
+.homeNavBar {
+  composes: navBar;
 }

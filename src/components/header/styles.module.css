@@ -1,1 +1,17 @@
 
+.headerDiv {
+  width: 95%;
+  max-height: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 1;
+  margin: 10px auto;
+  overflow: visible;
+
+}
+.resumeHeaderDiv {
+  composes: headerDiv;
+  flex-flow: column;
+}

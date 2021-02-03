@@ -1,20 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import react, { useEffect, useState } from 'react';
-import NavBar from '../navbar/NavBar';
-import MyPhoto from '../myphoto/MyPhoto';
+import NavBar from './NavBar';
+import Photo from './MainPhoto';
 import styles from './styles.module.css';
 
-
-function MainSection() {
+function ContactMain() {
 
   return (
     <section className="elements-sections main-section">
       <div className="main-section-div">
-        <MyPhoto />
-        <NavBar resume about portfolio className="home"/>
+        <Photo />
+        <NavBar/>
       </div>
     </section>
   );
 }
 
-export default MainSection;
+export default ContactMain;

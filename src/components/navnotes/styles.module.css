@@ -1,7 +1,18 @@
-.div {
+.navNotesDiv {
   margin: 0px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.homeNavNotesDiv {
+  composes: navNotesDiv;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-  width: 90%;
+}
+.navNotesDivSideBar {
+  composes: navNotesDiv;
+  flex-flow: column;
+  justify-content: space-evenly;
 }

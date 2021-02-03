@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import react, { useEffect, useState } from 'react';
-import NavBar from './NavBar';
+import NavBar from '../navbar/NavBar';
 import Photo from './MainPhoto';
 import styles from './styles.module.css';
 
-function MainSection() {
+function PortfolioMain() {
 
   return (
     <section className="elements-sections main-section">
@@ -16,4 +16,4 @@ function MainSection() {
   );
 }
 
-export default MainSection;
+export default PortfolioMain;

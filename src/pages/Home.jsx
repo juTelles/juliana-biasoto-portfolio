@@ -1,13 +1,12 @@
-import './../styles/home.css';
 import HomeHeader from '../components/home-components/HomeHeader';
-import MainSection from './../components/home-components/MainSection';
+import HomeMain from '../components/home-components/HomeMain';
 import Footer from '../components/footer/Footer';
 
 function Home() {
   return (
     <main>
       <HomeHeader/>
-      <MainSection/>
+      <HomeMain/>
       <Footer/>
     </main>
   );

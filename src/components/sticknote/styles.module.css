@@ -2,9 +2,9 @@
 .stickNoteDiv {
   width: 21vw;
   height: 10vh;
-  margin: 10px 10px;
-  max-width: 100px;
-  max-width: 100px;
+  margin: 5px 10px;
+  max-width: 60px;
+  max-height: 60px;
 }
 .stickNote {
   width: 100%;
@@ -22,6 +22,43 @@
 }
 .stickNoteText {
   font-family: 'Permanent Marker', cursive;
-  font-size: 12px;
-  margin-top: 10px;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+
+.homeStickNoteDiv {
+  composes: stickNoteDiv;
+  max-width: 100px;
+  max-height: 100px;
+  width: 28vw;
+  height: 15vh;
+}
+.homeStickNote {
+}
+.homeStickNoteGlue {
+  composes: stickNoteGlue;
+  margin: 0px;
+}
+.homeStickNoteText {
+  composes: stickNoteText;
+  font-size: 17px;
+}
+
+
+.aboutNote {
+  composes: stickNote;
+  transform: rotate(3deg);
+}
+.portfolioNote {
+  composes: stickNote;
+  transform: rotate(-3deg);
+}
+.resumeNote {
+  composes: stickNote;
+  transform: rotate(1deg);
+}
+.homeNote {
+  composes: stickNote;
+  transform: rotate(-1deg);
 }

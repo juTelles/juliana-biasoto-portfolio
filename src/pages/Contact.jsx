@@ -11,6 +11,7 @@ function Contact() {
         portfolio
         resume
         about
+        hasNavBar
       />
       <Footer />
     </main>

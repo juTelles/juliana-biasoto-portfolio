@@ -1,0 +1,9 @@
+
+.resumeStickersDiv {
+  width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 5px 0px 0px;
+}

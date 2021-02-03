@@ -2,12 +2,36 @@
 import react from 'react';
 import styles from './styles.module.css';
 
-function StickNote( { text, color, className } ) {
+
+function StickNote({ text, color, isHome, noteName }) {
+
+  const classNameBuilder = noteName => {
+    let className;
+    switch (noteName) {
+      case 'about':
+        className = styles.aboutNote;
+        break;
+      case 'portfolio':
+        className = styles.portfolioNote;
+        break;
+      case 'resume':
+        className = styles.resumeNote;
+        break;
+      default:
+        className = styles.homeNote;
+        break;
+    }
+    return className;
+  }
+
   return (
-    <div className={styles.stickNoteDiv} >
-      <div className={styles.stickNote} style={{backgroundColor: color}}>
-        <div className={styles.stickNoteGlue}></div>
-        <p className="noteText">{text}</p>
+    <div className={isHome ? styles.homeStickNoteDiv : styles.stickNoteDiv}>
+      <div
+        className={classNameBuilder(noteName)}
+        style={{ backgroundColor: color }}
+      >
+        <div className={isHome ? styles.homeStickNoteGlue : styles.stickNoteGlue}></div>
+        <p className={isHome ? styles.homeStickNoteText : styles.stickNoteText}>{text}</p>
       </div>
     </div>
   );

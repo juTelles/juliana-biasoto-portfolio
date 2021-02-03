@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 function Footer() {
   return (
     <footer className="elements-sections">
-      <div className="footer-div">
+      <div className={styles.footerDiv}>
         <Link to="/contact">
         <Sticker text="Contato" className="contact-sticker" />
         </Link>

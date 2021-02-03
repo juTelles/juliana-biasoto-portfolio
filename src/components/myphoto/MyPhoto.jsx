@@ -5,10 +5,10 @@ import styles from './styles.module.css';
 
 function MyPhoto() {
   return (
-    <div className="photo-div">
-      <figure className="photo-fig">
+    <div className={styles.photoDiv}>
+      <figure className={styles.photoFig}>
         <img
-          className="photo"
+          className={styles.photo}
           src={myPhoto}
           alt="Juliana Biasoto"
         />

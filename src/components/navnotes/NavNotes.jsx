@@ -4,35 +4,54 @@ import { Link } from 'react-router-dom';
 import StickNote from '../sticknote/StickNote';
 import styles from './styles.module.css';
 
-
-function NavNotes({ home, about, resume, portfolio }) {
+function NavNotes({ home, about, resume, portfolio, isHome, inMainSection }) {
   return (
-    <div className="nav-notes-div">
+    <div
+      className={
+        isHome
+          ? styles.homeNavNotesDiv
+          : inMainSection
+          ? styles.navNotesDivSideBar
+          : styles.navNotesDiv
+      }
+    >
       {home && (
-        <Link to="/about" className="note-link">
-          <StickNote color="#FCCDFF" text="Sobre Mim" className="about-stick" />
+        <Link to="/" className={styles.noteLink}>
+          <StickNote
+            isHome={isHome}
+            color="#cfb7f0"
+            text="Home"
+            noteName="home"
+          />
         </Link>
       )}
       {about && (
-        <Link to="/about" className="note-link">
-          <StickNote color="#FCCDFF" text="Sobre Mim" className="about-stick" />
+        <Link to="/about" className={styles.noteLink}>
+          <StickNote
+            isHome={isHome}
+            color="#FCCDFF"
+            text="Sobre Mim"
+            noteName="about"
+          />
         </Link>
       )}
       {resume && (
-        <Link to="/resume" className="note-link">
+        <Link to="/resume" className={styles.noteLink}>
           <StickNote
+            isHome={isHome}
             color="#FFFAAE"
-            text="Currículo"
-            className="resume-stick"
+            text="Currí-culo"
+            noteName="resume"
           />
         </Link>
       )}
       {portfolio && (
-        <Link to="/portfolio" className="note-link">
+        <Link to="/portfolio" className={styles.noteLink}>
           <StickNote
+            isHome={isHome}
             color="#c8e3ff"
-            text="Portfólio"
-            className="portfolio-stick"
+            text="Port-fólio"
+            noteName="portfolio"
           />
         </Link>
       )}

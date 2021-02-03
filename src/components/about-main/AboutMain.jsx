@@ -3,7 +3,7 @@ import react, { useEffect, useState } from 'react';
 import MyPhoto from '../myphoto/MyPhoto';
 import styles from './styles.module.css';
 
-function MainSectionAbout() {
+function AboutMain() {
 
   return (
     <section className="elements-sections main-section">
@@ -14,4 +14,4 @@ function MainSectionAbout() {
   );
 }
 
-export default MainSectionAbout;
+export default AboutMain;
