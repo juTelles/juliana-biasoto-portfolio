@@ -1,1 +1,59 @@
-
+.mainAboutDiv {
+  width: 100%;
+  margin: 90px 0px 0px 0px;
+}
+.aboutPhotoDiv {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.aboutPaperDiv {
+  margin: 0 auto;
+}
+.paperContentDiv {
+  width: 95%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.paperHeader {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.aboutPaperTitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-align: left;
+  overflow: visible;
+  margin: 20px -30px 0px 10px;
+}
+.paperMainContent {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.aboutPaperText {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.22rem;
+  margin: -80px 37px 25px 20px;
+  line-height: 1.4rem;
+  text-align: center;
+}
+.bottomFrameAndDate {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: -75px 10px -10px -10px;
+}
+.bottomFrameAndDate p {
+  margin: 0px 0px 30px 0px;
+}
