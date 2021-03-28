@@ -1,26 +1,23 @@
 // eslint-disable-next-line no-unused-vars
 import react, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
-import ResumePage from './resume-paper/ResumePaper';
-import ResumeStickers from './resume-sidebar/ResumeStickers';
-import NavBar from '../navbar/NavBar';
+import ResumeSections from './resume-components/resume-sections/ResumeSections';
+import ResumeStickNotes from './resume-components/resume-sticknotes/ResumeStickNotes';
 
-function ResumeMain({ resume, about, portfolio, home, isHome, inMainSection }) {
+function ResumeMain() {
+
+  const [resumePaperShowing, setResumePaperShowing] = useState('skills');
+
+ const handleResumePaperChange = (name) => {
+  setResumePaperShowing(name)
+ }
   return (
-    <section className="elements-sections main-section">
+    <section>
       <div className={styles.mainSectionDiv}>
-        <div className={styles.resumeSideBarDiv}>
-          <NavBar
-            resume={resume}
-            about={about}
-            portfolio={portfolio}
-            home={home}
-            isHome={isHome}
-            inMainSection={inMainSection}
-          />
-          <ResumeStickers />
+        <ResumeStickNotes handleClick={handleResumePaperChange} />
+        <div className={styles.resumeContentDiv}>
+        <ResumeSections resumePaperShowing={resumePaperShowing}/>
         </div>
-          <ResumePage />
       </div>
     </section>
   );

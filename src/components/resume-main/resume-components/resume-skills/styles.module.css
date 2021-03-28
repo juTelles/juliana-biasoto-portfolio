@@ -1,0 +1,34 @@
+.resumeSkillsDiv {
+  margin: 20px auto 10px auto;
+}
+.resumeSkillsSectionDiv {
+  width: 100%;
+  margin: 10px auto 15px auto;
+}
+.skillsSectionTitleDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 10px auto;
+}
+.skillsDiv {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:  0.5fr minmax(340px, 2fr) 0.5fr;
+  justify-content: stretch;
+}
+
+@media (min-width: 700px) {
+  .skillsDiv {
+    grid-template-columns:  1fr 1fr;
+    column-gap: 10px;
+  }
+}
+@media (min-width: 700px) {
+  .skillsDiv {
+    grid-template-columns:  1fr 1fr;
+    column-gap: 10px;
+  }
+}

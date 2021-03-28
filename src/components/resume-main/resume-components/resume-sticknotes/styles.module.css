@@ -1,0 +1,9 @@
+
+.resumeStickNotesDiv {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto 0.7rem auto;
+}

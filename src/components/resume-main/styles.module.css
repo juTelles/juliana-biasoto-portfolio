@@ -1,16 +1,11 @@
 .mainSectionDiv {
   width: 100%;
   display: flex;
-  flex-flow: row-reverse nowrap;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  margin-top: -20px;
+  align-items: flex-start;
+  margin: 65px auto 10px auto;
 }
-.resumeSideBarDiv {
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: -30px;
+.resumeContentDiv {
+  width: 100%;
 }
