@@ -5,32 +5,37 @@ import styles from './styles.module.css';
 function Sticker(props) {
   const {
     text,
-    outerBorder,
+    outerBorderColor,
     outerBorderSize,
-    innerBorder,
+    innerBorderColor,
     innerPadding,
     fontColor,
-    background,
+    backgroundColor,
     fontSize,
     width,
     rotate,
-    fontFamily
+    fontFamily,
+    margin,
+    onClick,
+    name
   } = props;
 
   return (
     <div
       style={{
-        backgroundColor: outerBorder,
+        backgroundColor: outerBorderColor,
         width: width,
         transform: `rotate(${rotate})`,
-        padding: outerBorderSize
+        padding: outerBorderSize,
+        margin: margin
       }}
       className={styles.stickerDiv}
+      onClick={() => onClick(name)}
     >
       <div
         style={{
-          backgroundColor: background,
-          border: `solid 3px ${innerBorder}`,
+          backgroundColor: backgroundColor,
+          border: `solid 3px ${innerBorderColor}`,
           padding: innerPadding
         }}
         className={styles.sticker}
