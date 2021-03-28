@@ -3,11 +3,15 @@
   width: 50vw;
   height: auto;
   max-width: 200px;
-  margin: 30px auto 30px auto;
+  max-height: 300px;
+  margin: 65px auto 30px auto;
   transform: rotate(350deg);
+  position: relative;
+  z-index: 1;
 }
 .photo {
-  box-shadow: 10px 10px 10px #333333;
+  width: 100%;
+  height: auto;
 }
 .photo:hover {
   animation: shake 0.5s;
@@ -32,4 +36,15 @@
   100% {
     transform: translate(2px, 2px) rotate(0deg);
   }
+}
+.photoShadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 103%;
+  height: 103%;
+  opacity: 0.8;
+  background: linear-gradient(to top, black 30%, transparent);
+  z-index: -1;
+  filter: blur(2px);
 }
