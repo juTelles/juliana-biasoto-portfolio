@@ -1,0 +1,9 @@
+.panelDiv {
+  max-width: 80vw;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 80px auto 10px auto;
+  justify-content: space-around;
+  align-items: center;
+
+}
