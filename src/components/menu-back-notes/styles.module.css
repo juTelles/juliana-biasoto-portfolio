@@ -1,0 +1,22 @@
+.menuBackgroundNoteDiv {
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.aboutNote {
+  transform: rotate(-11deg);
+}
+.resumeNote {
+  transform: rotate(13deg);
+}
+.portfolioNote {
+  transform: rotate(-2deg);
+}
+.contactNote {
+  transform: rotate(7deg);
+}
+.homeNote {
+  transform: rotate(-5deg);
+}
