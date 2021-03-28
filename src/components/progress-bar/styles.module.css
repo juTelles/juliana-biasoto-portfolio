@@ -1,0 +1,20 @@
+/* Sticker component styles */
+.progressBarDiv {
+  margin: 0px;
+  grid-column: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.progressBar {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80px;
+  margin: 0px;
+  margin-left: 10px;
+}
+.pinDiv {
+  margin: 0px;
+}
