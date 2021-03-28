@@ -8,9 +8,7 @@ function Footer() {
   return (
     <footer className="elements-sections">
       <div className={styles.footerDiv}>
-        <Link to="/contact">
-        <Sticker text="Contato" className="contact-sticker" />
-        </Link>
+
       </div>
     </footer>
   );
