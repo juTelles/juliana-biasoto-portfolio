@@ -1,7 +1,11 @@
 .navBar {
+  margin: 0px;
   display: flex;
+  flex-flow: column;
   justify-content: center;
-}
-.homeNavBar {
-  composes: navBar;
+  align-content: center;
+  position: fixed;
+  right: 10px;
+  top: 5px;
+  z-index: 2;
 }
