@@ -1,57 +1,70 @@
 // eslint-disable-next-line no-unused-vars
 import react from 'react';
 import { Link } from 'react-router-dom';
-import StickNote from '../sticknote/StickNote';
+import PinnedNote from '../pinned-note/PinnedNote';
 import styles from './styles.module.css';
 
-function NavNotes({ home, about, resume, portfolio, isHome, inMainSection }) {
+function NavNotes({ home, about, resume, portfolio, isHome, contact }) {
   return (
     <div
       className={
         isHome
           ? styles.homeNavNotesDiv
-          : inMainSection
-          ? styles.navNotesDivSideBar
           : styles.navNotesDiv
       }
     >
       {home && (
-        <Link to="/" className={styles.noteLink}>
-          <StickNote
+        <Link to={"/home" || "/"} className={styles.noteLink}>
+          <PinnedNote
+            notPinned={!isHome}
             isHome={isHome}
-            color="#cfb7f0"
             text="Home"
             noteName="home"
+            rotate="4deg"
           />
         </Link>
       )}
       {about && (
         <Link to="/about" className={styles.noteLink}>
-          <StickNote
+          <PinnedNote
+            notPinned={!isHome}
             isHome={isHome}
-            color="#FCCDFF"
             text="Sobre Mim"
             noteName="about"
+            rotate="-3deg"
           />
         </Link>
       )}
       {resume && (
         <Link to="/resume" className={styles.noteLink}>
-          <StickNote
+          <PinnedNote
+            notPinned={!isHome}
             isHome={isHome}
-            color="#FFFAAE"
-            text="Currí-culo"
+            text={isHome? 'Currículo': 'Currí-culo'}
             noteName="resume"
+            rotate="4deg"
           />
         </Link>
       )}
       {portfolio && (
         <Link to="/portfolio" className={styles.noteLink}>
-          <StickNote
+          <PinnedNote
+            notPinned={!isHome}
             isHome={isHome}
-            color="#c8e3ff"
-            text="Port-fólio"
+            text={isHome? 'Portifólio': 'Port-fólio'}
             noteName="portfolio"
+            rotate="3deg"
+          />
+        </Link>
+      )}
+      {contact && (
+        <Link to="/contact" className={styles.noteLink}>
+          <PinnedNote
+            notPinned={!isHome}
+            isHome={isHome}
+            text="Contact"
+            noteName="contact"
+            rotate="-2deg"
           />
         </Link>
       )}

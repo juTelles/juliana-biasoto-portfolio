@@ -1,18 +1,8 @@
 .navNotesDiv {
-  margin: 0px;
+  margin: 0 0.5rem 0 0;
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
-}
-.homeNavNotesDiv {
-  composes: navNotesDiv;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-.navNotesDivSideBar {
-  composes: navNotesDiv;
-  flex-flow: column;
-  justify-content: space-evenly;
+  z-index: 2;
 }
