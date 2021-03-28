@@ -1,0 +1,46 @@
+/* pinnedNote component styles */
+.pinnedNoteDiv {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin: 5px;
+  /* max-width: 60px;
+  max-height: 60px; */
+  min-width: 50px;
+  min-height: 50px;
+  position: relative;
+}
+.pinnedNote {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+  background-color: #f5f5f5;
+}
+.pinnedNoteShadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 105%;
+  width: 105%;
+  opacity: 0.8;
+  background: linear-gradient(to top, black 40%, transparent);
+  z-index: -1;
+  filter: blur(2px);
+}
+.pinnedNoteContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pinnedNoteText {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 0.8rem;
+  margin: 0px auto;
+  color: #000000;
+}
