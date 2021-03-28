@@ -1,14 +1,21 @@
-import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
+import Container from '../components/container/Container';
 import ResumeMain from '../components/resume-main/ResumeMain';
+import './../styles/index.css';
 
 function Resume() {
   return (
-    <main>
-      <Header text="Currículo" className="resume-header" />
-      <ResumeMain inMainSection home portfolio about />
-      <Footer />
-    </main>
+    <Container>
+      <Header
+        title="Currículo"
+        className="resume-header"
+        home
+        portfolio
+        about
+        contact
+      />
+      <ResumeMain />
+    </Container>
   );
 }
 export default Resume;

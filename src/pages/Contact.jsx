@@ -5,13 +5,12 @@ function Contact() {
   return (
     <main>
       <Header
-        text="Contate me"
+        title="Contate me"
         className="contact-header"
         home
         portfolio
         resume
         about
-        hasNavBar
       />
       <Footer />
     </main>

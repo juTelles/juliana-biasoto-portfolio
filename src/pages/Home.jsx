@@ -1,12 +1,12 @@
-import HomeHeader from '../components/home-components/HomeHeader';
-import HomeMain from '../components/home-components/HomeMain';
+import HomeHeader from '../components/home-components/home-header/HomeHeader';
+import HomeMain from '../components/home-components/home-main/HomeMain';
 import Footer from '../components/footer/Footer';
 
 function Home() {
   return (
     <main>
       <HomeHeader/>
-      <HomeMain/>
+      <HomeMain isHome/>
       <Footer/>
     </main>
   );
