@@ -2,37 +2,30 @@
 import react from 'react';
 import styles from './styles.module.css';
 
-
-function StickNote({ text, color, isHome, noteName }) {
-
-  const classNameBuilder = noteName => {
-    let className;
-    switch (noteName) {
-      case 'about':
-        className = styles.aboutNote;
-        break;
-      case 'portfolio':
-        className = styles.portfolioNote;
-        break;
-      case 'resume':
-        className = styles.resumeNote;
-        break;
-      default:
-        className = styles.homeNote;
-        break;
-    }
-    return className;
-  }
-
+function StickNote({ text, color, isHome, noteName, onClick, rotate }) {
   return (
-    <div className={isHome ? styles.homeStickNoteDiv : styles.stickNoteDiv}>
+    <div
+      onClick={!isHome ? () => onClick(noteName) : ''}
+      className={isHome ? styles.homeStickNoteDiv : styles.stickNoteDiv}>
       <div
-        className={classNameBuilder(noteName)}
-        style={{ backgroundColor: color }}
-      >
-        <div className={isHome ? styles.homeStickNoteGlue : styles.stickNoteGlue}></div>
-        <p className={isHome ? styles.homeStickNoteText : styles.stickNoteText}>{text}</p>
+        className={styles.stickNote}
+        style={{ backgroundColor: color, transform: `rotate(${rotate})` }}>
+        <div
+          className={isHome ? styles.homeStickNoteGlue : styles.stickNoteGlue}>
+        </div>
+        <div
+          className={
+            isHome ? styles.homeStickNoteContent : styles.stickNoteContent
+          }
+        >
+          <p
+            className={isHome ? styles.homeStickNoteText : styles.stickNoteText}
+          >
+            {text}
+          </p>
+        </div>
       </div>
+      <div className={styles.stickNoteShadow}></div>
     </div>
   );
 }
