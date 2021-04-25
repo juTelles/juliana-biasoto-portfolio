@@ -2,13 +2,17 @@
 .stickNoteDiv {
   width: 4rem;
   height: 4rem;
-  margin: 0.2rem;
-  min-width: 50px;
-  min-height: 50px;
+  width: calc(1.5rem + 12vmin);
+  height: calc(1.5rem + 12vmin);
+  min-width: 4rem;
+  min-height: 4rem;
+  margin: 1rem 0.2rem 1rem;
+  margin: 1rem calc(0.1rem + 0.5vmin);
   position: relative;
+  cursor: pointer;
 }
 .stickNote {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   display: flex;
   flex-flow: column;
@@ -43,26 +47,58 @@
 .stickNoteText {
   font-family: 'Permanent Marker', sans-serif;
   font-size: 0.9rem;
+  font-size: calc(0.6rem + 1.5vmin);
   margin: 5px auto;
   letter-spacing: -0.5px;
 }
-
-.homeStickNoteDiv {
-  composes: stickNoteDiv;
-  width: 32vw;
-  height: 16vh;
-  max-width: 110px;
-  max-height: 120px;
-  margin: 10px;
+.stickNoteDiv.selected {
+  width: 4.2rem;
+  height: 4.2rem;
+  width: calc(1.9rem + 12vmin);
+  height: calc(1.9rem + 12vmin);
 }
-.homeStickNoteGlue {
-  composes: stickNoteGlue;
+.stickNoteDiv:hover {
+  width: 4.2rem;
+  height: 4.2rem;
+  width: calc(1.9rem + 12vmin);
+  height: calc(1.9rem + 12vmin);
+}
+
+.stickNoteDiv.home {
+  width: 6rem;
+  height: 6.5rem;
+  margin: 1rem;
+}
+.stickNoteGlue.home {
   margin: 0px;
 }
-.homeStickNoteContent {
-  composes: stickNoteContent;
-}
-.homeStickNoteText {
-  composes: stickNoteText;
+.stickNoteText.home {
   font-size: 1.1rem;
+}
+
+@media (min-width: 900px) {
+  .stickNoteDiv {
+    width: 6rem;
+    height: 6rem;
+    width: calc(2.8rem + 8vmin);
+    height: calc(2.8rem + 8vmin);
+    margin: 0.4rem;
+  }
+  .stickNoteDiv.selected {
+    width: 6.4rem;
+    height: 6.4rem;
+    width: calc(3.2rem + 8vmin);
+    height: calc(3.2rem + 8vmin);
+  }
+  .stickNoteDiv:hover {
+    width: 6.4rem;
+    height: 6.4rem;
+    width: calc(3.2rem + 8vmin);
+    height: calc(3.2rem + 8vmin);
+  }
+  .stickNoteText {
+    font-size: 1.1rem;
+    font-size: calc(0.9rem + 1vmin);
+    letter-spacing: 0px;
+  }
 }

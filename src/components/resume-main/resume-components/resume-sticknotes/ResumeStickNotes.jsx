@@ -3,7 +3,10 @@ import react, { useEffect, useState } from 'react';
 import StickNote from '../../../sticknote/StickNote';
 import styles from './styles.module.css';
 
-function ResumeStickNotes({ handleClick }) {
+function ResumeStickNotes({ handleClick, selectedResumeSection }) {
+
+  const [ selected, setSelected ] = useState('')
+
   return (
     <div className={styles.resumeStickNotesDiv}>
       <StickNote
@@ -12,6 +15,7 @@ function ResumeStickNotes({ handleClick }) {
         color="#fffa92"
         onClick={handleClick}
         rotate="3deg"
+        selected={selectedResumeSection === 'skills' ? true : false}
         />
       <StickNote
         text="Educação"
@@ -19,6 +23,7 @@ function ResumeStickNotes({ handleClick }) {
         noteName="education"
         onClick={handleClick}
         rotate="1deg"
+        selected={selectedResumeSection === 'education' ? true : false}
         />
       <StickNote
         text="Projetos"
@@ -26,6 +31,7 @@ function ResumeStickNotes({ handleClick }) {
         noteName="projects"
         onClick={handleClick}
         rotate="-2deg"
+        selected={selectedResumeSection === 'projects' ? true : false}
         />
       <StickNote
         text="PDF"
@@ -33,6 +39,7 @@ function ResumeStickNotes({ handleClick }) {
         noteName="pdf"
         onClick={handleClick}
         rotate="-1deg"
+        selected={selectedResumeSection === 'pdf' ? true : false}
       />
     </div>
   );
