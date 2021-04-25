@@ -8,7 +8,7 @@
   align-items: flex-start;
   max-width: 300px;
   max-height: 60px;
-  margin: 2rem 0.3rem 0.3rem 1.8rem;
+  margin: 2rem 0.2rem 0.3rem 0.4rem;
   font-family: 'Special Elite';
   color: #1d1209;
   z-index: 0;
@@ -26,3 +26,26 @@
   max-height: 60px;
   margin: 40px 10px 0px 20px;
 }
+@media (min-width: 500px) {
+  .titleDiv {
+    margin: 2rem 0.2rem 0.3rem 1rem;
+  }
+  .titleText {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 900px) {
+  .titleDiv {
+    max-width: 600px;
+    max-height: 200px;
+    margin: 2rem 0.2rem 0.3rem 2rem;
+  }
+  .titleText {
+    font-size: 3rem;
+  }
+}
+/* @media (min-width: 1200px) {
+  .titleText {
+    font-size: 3rem;
+  }
+} */
