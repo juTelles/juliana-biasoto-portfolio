@@ -3,32 +3,44 @@ export const resumeText = {
     education: {
       title: 'Educação',
       type: 'list',
-      text: [
+      list: [
+        [
+        '2021',
         'Em andamento',
-        'Skillcrush - Break Into Tech',
-        '',
+        'Skillcrush Coding Bootcamp',
+        'Break Into Tech Course',
+        ],
+        [
         '09/2020',
         'IGTI - Full-Stack Developer Bootcamp',
         'Certificado de Desenvolvedora Full-Stack JavaScript',
-        '',
-        '08/2020',
-        'IGTI - Evento Data Universe - Certificado de participação',
-        '',
-        'Sprint PrograMaria',
-        'Inteligência Artificial para Devs, em parceria com a Intel',
-        '',
+        ],
+        [
         '09/2020',
         'Free Code Camp',
         'Certificado de Web Design Responsivo',
-        '',
+        ],
+        [
+        '08/2020',
+        'IGTI - Evento Data Universe',
+        'Certificado de participação',
+        ],
+        [
+        '05/2020',
+        'Sprint PrograMaria',
+        'Inteligência Artificial para Devs, em parceria com a Intel',
+        ],
+        [
         '2019',
         'Edx - Curso do MIT',
         'Introdução a Computação e Programação usando Python',
-        '',
+        ],
+        [
         '2007-2011',
         'PUC Campinas',
         'Graduada Bacharel em Direito',
         'Aprovada na OAB',
+        ]
       ],
     },
     languages: {
@@ -53,7 +65,7 @@ export const resumeText = {
              para estruturar, organizar e arrumar.`,
     },
     projects: {
-      title: 'Projetos',
+      title: 'Meus Projetos',
       type: 'severalTexts',
       projects: [
         {
@@ -77,13 +89,10 @@ export const resumeText = {
             'tratamento de erros',
             'back-end',
           ],
-          description: `Desenvolvi API para registro de notas escolares, usando Node.js e o
-                        Nodemon, para acelerar o desenvolvimento, integrei a API ao MongoDB, e
-                        utilizei o Mongoose para definir o modelo do objeto json e gerenciar
-                        as coleções. Implementei os endpoints para solicitações HTTP com
-                        Express e testei os middlewares com Insomnia, escrevi o tratamento de
-                        erros e usei o Winston para gerenciar os logs. Fiz o deploy do
-                        aplicativo e seu front-end no Heroku.`,
+          description: `Desenvolvi API para registro de notas escolares no NodeJS, integrei ao MongoDB, utilizei o Mongoose para definir o modelo do objeto json e gerenciar
+                        as coleções. Implementei os endpoints com
+                        Express, testei os middlewares com Insomnia e escrevi o tratamento de
+                        erros. Fiz o deploy do aplicativo no Heroku.`,
           link: 'grades-app-front-end.herokuapp.com/grade',
         },
         {
@@ -107,11 +116,10 @@ export const resumeText = {
             'tratamento de erros',
             'back-end',
           ],
-          description: `Desenvolvi aplicativo web que realiza operações bancárias simples.
-                        Usando Node.js implementei a API e a integrei ao MongoDB,
-                        usei o Mongoose para estruturar o modelo do objeto json dos dados e manipulá-los.
-                        Desenvolvi os endpoints para consumo da API com Express, testei as rotas com insomnia,
-                        usei o Winston para gerenciar os logs e tratei possíveis erros.`,
+          description: `Desenvolvi Web App que realiza operações bancárias simples.
+                        Usando NodeJS implementei a API e a integrei ao MongoDB,
+                        usei o Mongoose para estruturar o modelo do objeto json e manipular os dados.
+                        Desenvolvi os endpoints com Express, testei as rotas com insomnia, e tratei possíveis erros.`,
           link: 'github.com/juTelles/my-bank-api',
         },
         {
@@ -124,9 +132,9 @@ export const resumeText = {
             'front-end',
             'JavaScript',
           ],
-          description: `Desenvolvi aplicativo React para
-                        calcular juros compostos. Implementei o app com React Hooks em
-                        ambiente Node.js com Yarn. Design em andamento.`,
+          description: `Desenvolvi React App para
+                        calcular juros compostos. Usei React Hooks em
+                        ambiente Node.js. Design em andamento.`,
           link: 'jutelles.github.io/compound-interest-calculator/',
         },
         {
@@ -139,11 +147,10 @@ export const resumeText = {
             'front-end',
             'JavaScript',
           ],
-          description: `Programei aplicativo React para cálculo de salário
+          description: `Programei React App para cálculo de salário
                         após retirado o valor do imposto de
-                        renda e INSS. Implementei a lógica do aplicativo com React Class
-                        Components no ambiente Node.js usando Yarn como gerenciador de
-                        pacotes. `,
+                        renda e INSS. Usei React Class
+                        Components no NodeJS. `,
           link: 'github.com/juTelles/salary-calculator',
         },
         {
@@ -156,9 +163,9 @@ export const resumeText = {
             'yarn',
             'front-end',
           ],
-          description: `Desenvolvi aplicativo web para pesquisa de perfis. Busquei os dados de
-                        uma API web pública usando JavaScript assíncrono em ambiente node.js.
-                        Design ainda em andamento.`,
+          description: `Desenvolvi aplicativo Web para pesquisa de perfis. Busquei os dados de
+                        uma API Web pública usando JavaScript assíncrono em ambiente NodeJS.
+                        Design ainda se encontra em andamento.`,
           link: 'jutelles.github.io/search-box/',
         },
         {
@@ -187,9 +194,9 @@ export const resumeText = {
             'Web Page',
             'Design',
           ],
-          description: `Codifiquei aplicativo JavaScript, fazendo uso de elementos HTML
-                        combinados com programação reativa.
-                        Os Designs são de minha autoria, utilizando principalmente CSS.`,
+          description: `Codifiquei aplicativo de escolha e análise de cores, tons e combinações, utilizei elementos HTML e declarações em CSS
+                        combinados com JavaScript para fazer um app com programação reativa.
+                        Todos os Designs são de minha autoria.`,
           link: 'jutelles.github.io/color-picker-ranges',
         },
         {
@@ -207,9 +214,9 @@ export const resumeText = {
             'web design',
             'responsivo',
           ],
-          description: `Construí Web site totalmente responsivo no Codepen.
+          description: `Construí Website totalmente responsivo no ambiente do Codepen.
                         Implementei formulário, com diversos elementos,
-                        funcional e responsivo, usando, quando possível,
+                        funcionais e responsivos, usando, quando possível,
                         apenas HTML e CSS e quando necessário JavaScript puro.
                         O design dos layout e da maioria de
                         seus elementos são de minha autoria.`,
@@ -229,7 +236,7 @@ export const resumeText = {
             'web design',
             'responsivo',
           ],
-          description: `Construí Web site totalmente
+          description: `Construí Website totalmente
                         responsivo no Codepen.
                         Implementei diversos elementos,
                         todos funcionais, reativos e responsivo,
@@ -252,7 +259,7 @@ export const resumeText = {
             'CodePen',
             'responsivo',
           ],
-          description: `Construí Web site totalmente
+          description: `Construí Website totalmente
                         responsivo no Codepen. Implementei diversos elementos,
                         funcionais e responsivos, usando,
                         quando possível, apenas HTML e CSS e
@@ -272,7 +279,7 @@ export const resumeText = {
             'web design',
             'responsivo',
           ],
-          description: `Codifiquei website totalmente
+          description: `Codifiquei Website totalmente
                         responsivo, usando apenas com HTML e CSS,
                         a partir de um photoshop comp.`,
           link: 'jutelles.github.io/unplugged-retreat-website',
@@ -288,7 +295,7 @@ export const resumeText = {
             'web design',
             'responsivo',
           ],
-          description: `Codifiquei website totalmente
+          description: `Codifiquei Website totalmente
                         responsivo, usando apenas HTML e CSS,
                         a partir de um photoshop comp.`,
           link: 'jutelles.github.io/rogue-pickings-responsive',
@@ -315,79 +322,27 @@ export const resumeText = {
           title: 'Code',
           color: 'pink',
           skills: [
+            {
+              name: 'CSS',
+              level: 5,
+            },
             { name: 'HTML', level: 5 },
             {
               name: 'JavaScript',
               level: 4,
             },
             {
-              name: 'Formulas',
-              level: 5,
-            },
-            {
-              name: 'Python',
-              level: 3,
-            },
-            {
               name: 'Node.js',
               level: 4,
-            },
-            {
-              name: 'Express',
-              level: 3,
             },
             {
               name: 'React',
               level: 4,
             },
             {
-              name: 'Ruby',
-              level: 1,
-            },
-            {
-              name: 'PHP',
-              level: 1,
-            },
-            {
-              name: 'Wordpress',
-              level: 1,
-            },
-            {
-              name: 'GitHub',
-              level: 5,
-            },
-          ],
-        },
-        {
-          title: 'Web Design',
-          color: 'blue',
-          skills: [
-            {
-              name: 'CSS',
-              level: 5,
-            },
-            {
-              name: 'Photoshop',
+              name: 'Express',
               level: 3,
             },
-            {
-              name: 'UX design',
-              level: 3,
-            },
-            {
-              name: 'UI design',
-              level: 3,
-            },
-            {
-              name: 'Illustrator',
-              level: 2,
-            },
-          ],
-        },
-        {
-          title: 'Dados',
-          color: 'yellow',
-          skills: [
             {
               name: 'MongoDB',
               level: 3,
@@ -397,8 +352,64 @@ export const resumeText = {
               level: 3,
             },
             {
+              name: 'Python',
+              level: 3,
+            },
+            {
+              name: 'PHP',
+              level: 1,
+            },
+            {
+              name: 'Ruby',
+              level: 1,
+            },
+            {
+              name: 'Wordpress',
+              level: 1,
+            },
+          ],
+        },
+        {
+          title: 'Ferramentas',
+          color: 'blue',
+          skills: [
+            {
+              name: 'GitHub',
+              level: 5,
+            },
+            {
+              name: 'Google Docs',
+              level: 5,
+            },
+            {
+              name: 'Office',
+              level: 4,
+            },
+            {
+              name: 'Photoshop',
+              level: 3,
+            },
+            {
+              name: 'Illustrator',
+              level: 2,
+            },
+          ],
+        },
+        {
+          title: 'Conhecimentos',
+          color: 'yellow',
+          skills: [
+            {
               name: 'APIs',
               level: 4,
+            },
+            {
+              name: 'UI design',
+              level: 3,
+            },
+            {
+              name: 'UX design',
+              level: 3,
             },
             {
               name: 'IA',
@@ -411,11 +422,11 @@ export const resumeText = {
           color: 'green',
           skills: [
             {
-              name: 'Português',
+              name: 'Inglês',
               level: 5,
             },
             {
-              name: 'Inglês',
+              name: 'Português',
               level: 5,
             },
           ],
@@ -425,28 +436,24 @@ export const resumeText = {
           color: 'purple',
           skills: [
             {
-              name: 'Determinação',
-              level: 5,
-            },
-            {
               name: 'Criatividade',
               level: 5,
             },
             {
-              name: 'Concentração',
-              level: 4,
+              name: 'Determinação',
+              level: 5,
             },
             {
               name: 'Comunicação',
               level: 4,
             },
             {
-              name: 'Organização',
+              name: 'Concentração',
               level: 4,
             },
             {
-              name: 'Comprometimento',
-              level: 5,
+              name: 'Organização',
+              level: 4,
             },
           ],
         },

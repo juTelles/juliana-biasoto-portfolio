@@ -5,18 +5,20 @@ import ResumeSections from './resume-components/resume-sections/ResumeSections';
 import ResumeStickNotes from './resume-components/resume-sticknotes/ResumeStickNotes';
 
 function ResumeMain() {
+  const [selectedResumeSection, setSelectedResumeSection] = useState('skills');
 
-  const [resumePaperShowing, setResumePaperShowing] = useState('skills');
-
- const handleResumePaperChange = (name) => {
-  setResumePaperShowing(name)
- }
+  const handleResumeSectionChange = (name) => {
+    setSelectedResumeSection(name);
+  };
   return (
     <section>
       <div className={styles.mainSectionDiv}>
-        <ResumeStickNotes handleClick={handleResumePaperChange} />
+        <ResumeStickNotes
+          handleClick={handleResumeSectionChange}
+          selectedResumeSection={selectedResumeSection}
+        />
         <div className={styles.resumeContentDiv}>
-        <ResumeSections resumePaperShowing={resumePaperShowing}/>
+          <ResumeSections resumeSectionShowing={selectedResumeSection} />
         </div>
       </div>
     </section>

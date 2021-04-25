@@ -17,7 +17,8 @@ function Sticker(props) {
     fontFamily,
     margin,
     onClick,
-    name
+    name,
+    innerBorderSize
   } = props;
 
   return (
@@ -35,7 +36,8 @@ function Sticker(props) {
       <div
         style={{
           backgroundColor: backgroundColor,
-          border: `solid 3px ${innerBorderColor}`,
+          borderColor: innerBorderColor,
+          borderWidth: innerBorderSize,
           padding: innerPadding
         }}
         className={styles.sticker}
