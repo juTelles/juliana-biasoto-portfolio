@@ -1,5 +1,38 @@
 .resumeList {
   list-style: none;
-  padding: 0px;
-  margin: 10px auto;
+  padding: 0;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+}
+.resumeList li {
+  position: relative;
+  width: 100%;
+  margin: 0.5rem;
+  max-width: 350px;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-size: calc(0.8rem + 1vmin);
+  line-height: calc(1rem + 1vmin);
+}
+
+@media (min-width: 1200px) {
+  .resumeList {
+    flex-flow: column wrap;
+    height: 58vh;
+    width: 100%;
+    margin: 0;
+  }
+  .resumeList li {
+    margin: 0.8rem 0.3rem;
+    margin: calc(0.7rem + 0.2vh) 0.3rem;
+    max-width: 450px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: fill;
+  }
 }

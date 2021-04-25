@@ -4,22 +4,27 @@ import Paper from '../../../paper/Paper';
 import styles from './styles.module.css';
 
 function ResumeEducation({ text }) {
-
   let id = 0;
   return (
-    <Paper title={text.title}>
-        <ul className={styles.resumeList}>
-          {text.text.map((item) => {
-            id += 1;
-            return item === '' ? (
-              <li key={id}>
-                <br />
-              </li>
-            ) : (
-              <li key={id}>{item}</li>
-            );
-          })}
-        </ul>
+    <Paper title={text.title} sectionClassName="education">
+      <ul className={styles.resumeList}>
+        {text.list.map((item) => {
+          id += 1;
+          return (
+          <li key={id} style={{order:{id}}}>
+            {
+            item.map((i, index) => {
+              return (
+              index === 0 ?
+              <p style={{fontWeight:"bold"}}>{i}</p>
+              : <p>{i}</p>
+               )
+            })
+            }
+          </li>
+          )
+        })}
+      </ul>
     </Paper>
   );
 }
