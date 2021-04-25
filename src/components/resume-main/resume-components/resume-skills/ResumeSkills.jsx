@@ -5,17 +5,17 @@ import Sticker from '../../../sticker/Sticker';
 import Skill from './skill/Skill';
 
 function ResumeSkills({ text }) {
-
   let id = 0;
   return (
     <div className={styles.resumeSkillsDiv}>
       {text.skillsSections.map((section) => {
         id += 1;
+        const title = section.title;
         return (
-          <div key={id} className={styles.resumeSkillsSectionDiv}>
+          <div key={id} className={`${styles.resumeSkillsSectionDiv} ${styles[title]}`}>
             <div className={styles.skillsSectionTitleDiv}>
             <Sticker
-              text={section.title}
+              text={title}
               innerBorder="2px"
               innerPadding="1px 2px"
               margin="5px 0px 5px 0px"

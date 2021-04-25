@@ -1,7 +1,6 @@
 .skillNameDiv {
-  margin: 0px;
-  width: 45%;
-  grid-column: 2;
+  margin: 0;
+  grid-column: 1;
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
@@ -13,27 +12,30 @@
   text-align: left;
 }
 .skill {
+  font-size: 0.85rem;
   width: 100%;
-  margin: 0px;
-  grid-column: 2;
+  margin: 0;
+  grid-column: 1;
   display: grid;
-  grid-template-columns: 0.5fr minmax(144px, 1.5fr) 1.5fr 0.5fr;
+  grid-template-columns: auto;
   font-family: 'Permanent Marker', sans-serif;
   color: #000000;
-  font-size: 0.9rem;
+  column-gap: 0.4rem;
+  max-width: 12.8rem;
 }
-
-@media (min-width: 410px) {
+@media (min-width: 500px) {
   .skill {
-    grid-template-columns: 0.7fr minmax(160px, 1.3fr) 1.3fr 0.7fr;
+    margin: 0rem auto;
+    font-size: 0.95rem;
+    font-size: calc(0.85rem + 0.5vmin);
+    column-gap: 0.6rem;
+    column-gap: calc(0.2rem + 1vw);
+    max-width: 100%;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 1200px) and (min-height: 700px) {
   .skill {
-    grid-column: span 1;
-    grid-template-columns: 0.9fr minmax(176px, 1.5fr) 1.5fr 0.5fr;
+    margin: 0.1rem auto;
+    margin: calc(0.1rem + 0.3vh) auto;
   }
-}
-@media (min-width: 900px) {
-
 }
