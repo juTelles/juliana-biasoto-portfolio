@@ -21,6 +21,7 @@ function NavNotes({ home, about, resume, portfolio, isHome, contact }) {
             text="Home"
             noteName="home"
             rotate="4deg"
+            centerText
           />
         </Link>
       )}
@@ -65,6 +66,7 @@ function NavNotes({ home, about, resume, portfolio, isHome, contact }) {
             text="Contact"
             noteName="contact"
             rotate="-2deg"
+            centerText
           />
         </Link>
       )}

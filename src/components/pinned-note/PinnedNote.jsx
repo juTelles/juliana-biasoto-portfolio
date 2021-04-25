@@ -9,7 +9,8 @@ function PinnedNote({
   onClick,
   notPinned,
   rotate,
-  margin
+  margin,
+  centerText,
 }) {
   return (
     <div onClick={onClick} className={styles.pinnedNoteDiv}>
@@ -18,8 +19,17 @@ function PinnedNote({
         style={{ backgroundColor: color, transform: `rotate(${rotate})` }}
       >
         <div className={styles.pinnedNoteContent}>
-          <Pin notPinned={notPinned} />
-          <p className={styles.pinnedNoteText} style={{margin: margin}}>{text}</p>
+          <div className={styles.pinDiv}>
+            <Pin notPinned={notPinned} />
+          </div>
+          <div
+            className={styles.pinnedNoteTextDiv}
+            style={centerText === true ? { paddingTop: '0.3rem' } : {paddingTop: '0px'}}
+          >
+            <p className={styles.pinnedNoteText} style={{ margin: margin }}>
+              {text}
+            </p>
+          </div>
         </div>
       </div>
       <div className={styles.pinnedNoteShadow}></div>

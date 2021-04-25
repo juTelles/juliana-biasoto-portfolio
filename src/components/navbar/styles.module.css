@@ -1,11 +1,11 @@
 .navBar {
-  margin: 0px;
+  margin: 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-content: center;
   position: fixed;
-  right: 10px;
-  top: 5px;
+  right: 0.8rem;
+  top: 0.4rem;
   z-index: 2;
 }

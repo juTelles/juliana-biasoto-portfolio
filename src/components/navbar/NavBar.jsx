@@ -21,6 +21,7 @@ function NavBar({ resume, about, portfolio, home, contact }) {
             onClick={handleClickMenu}
             rotate="1deg"
             margin="-7px auto"
+            centerText
           />
         {!menuIsOpen && (
             <MenuNotesBackground
