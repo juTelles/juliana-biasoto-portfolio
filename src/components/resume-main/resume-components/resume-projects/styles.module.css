@@ -1,14 +1,40 @@
-.projectDiv {
-  margin: 20px auto 0px auto;
+.projectsDiv {
+  margin: 1.5rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  max-width: calc(400px + 20vmin);
 }
 .projectList {
   padding: 0px;
-  margin: -20px auto 10px auto;
+  margin: 0 auto 1rem auto;
 }
 .project h5 {
-  font-size: 1rem;
-  margin: 0px auto 20px auto;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  margin: 1rem auto 1rem auto;
 }
 .project p {
-  margin: 0px auto;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+@media (min-width: 500px) {
+}
+@media (min-width: 900px) {
+  .projectsDiv {
+    max-width: 80%;
+    column-count: 2;
+
+  }
+}
+@media (min-width: 1200px) {
+  .projectsDiv {
+    max-width: 95%;
+    column-count: 3;
+}
+}
+@media (min-width: 2000px) {
+  .projectsDiv {
+    column-count: 4;
+}
 }

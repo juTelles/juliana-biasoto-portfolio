@@ -2,18 +2,27 @@
 import react, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import Paper from '../../../paper/Paper';
-import PageTitle from '../../../page-title/PageTitle';
+import Sticker from '../../../sticker/Sticker';
 
 function ResumeProjects({ text }) {
 
   let id = 0;
   return (
-    <div className={styles.projectDiv}>
-    <PageTitle text={text.title} fontSize="28px" alignText="center" width="90%" margin="0px auto"/>
+    <>
+    <Sticker text={text.title}
+      fontSize="1.2rem"
+      margin="0.5rem auto 0 auto"
+      innerPadding="0.3rem"
+      fontColor="#e20000"
+      innerBorderColor="#e20000"
+      innerBorderSize="0.3rem"
+      outerBorderSize="0rem"
+      />
+    <div className={styles.projectsDiv}>
     {text.projects.map((project) => {
     id += 1;
     return (
-      <Paper>
+      <Paper sectionClassName="project">
         <div className={styles.projectList}>
           {project === '' ? (
             <div key={id} className={styles.emptyProject}>
@@ -30,6 +39,22 @@ function ResumeProjects({ text }) {
     );
   })};
   </div>
+  </>
   )}
 
 export default ResumeProjects;
+
+// text,
+// outerBorderColor,
+// outerBorderSize,
+// innerBorderColor,
+// innerPadding,
+// fontColor,
+// backgroundColor,
+// fontSize,
+// width,
+// rotate,
+// fontFamily,
+// margin,
+// onClick,
+// name
