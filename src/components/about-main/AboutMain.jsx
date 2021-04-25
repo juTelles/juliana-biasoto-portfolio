@@ -12,17 +12,23 @@ function AboutMain() {
     <section>
       <div className={styles.mainAboutDiv}>
         <div className={styles.aboutPaperDiv}>
-          <Paper color="#dbc3f3" pinColor="purple" className={styles.paperContentDiv}>
-            <div className={styles.paperHeader}>
-            <h2 className={styles.aboutPaperTitle}>Juliana Biasoto</h2>
-            <Frame/>
-            </div>
-            <div className={styles.paperMainContent}>
-            <p className={styles.aboutPaperText}>{text.text}</p>
-            <div className={styles.bottomFrameAndDate}>
-            <Frame rotate="180deg"/>
-            <p>{text.date}</p>
-            </div>
+          <Paper
+            color="#dbc3f3"
+            pinColor="purple"
+            sectionClassName="about"
+          >
+            <div className={styles.paperContent}>
+              <div className={styles.paperHeader}>
+                <h2 className={styles.aboutPaperTitle}>Juliana Biasoto</h2>
+                <Frame />
+              </div>
+              <div className={styles.paperMainContent}>
+                <p className={styles.aboutPaperText}>{text.text}</p>
+                <div className={styles.bottomFrameAndDate}>
+                  <Frame rotate="180deg" />
+                  <p>{text.date}</p>
+                </div>
+              </div>
             </div>
           </Paper>
         </div>

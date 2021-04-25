@@ -4,11 +4,11 @@ export const aboutText = {
       type: 'oneText',
       text: `Eu amo animais e seres humanos, já li tantos livros que confundo e
          misturo seus personagens, gosto de humor inteligente e jogos que
-         desafiam o cérebro. Acho que a simpatia e civilidade são essenciais em
+         desafiam a mente. Acho que a simpatia e civilidade são essenciais em
          qualquer ambiente, contanto que a verdade e o pensamento crítico
          também sejam uma presença constante. Acho importante estar em
          constante desenvolvimento, nesse mundo tão impressionante e complexo
-         em que vivemos sempre a algo novo a aprender e conhecimentos antigos a
+         em que vivemos, sempre a algo novo a aprender e conhecimentos antigos a
          relembrar e melhorar.`,
       date: '15 de Fevereiro de 2020'
   },

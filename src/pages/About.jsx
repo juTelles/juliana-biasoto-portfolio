@@ -6,7 +6,7 @@ import Container from '../components/container/Container';
 function About() {
   return (
     <Container>
-      <Header title="Sobre Mim" className="about-header" home portfolio resume/>
+      <Header title="Sobre Mim" className="about-header" home portfolio resume contact/>
       <AboutMain />
       <Footer />
     </Container>

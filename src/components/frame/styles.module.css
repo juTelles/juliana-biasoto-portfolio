@@ -1,5 +1,13 @@
 /* Sticker component styles */
 .frameSvg {
-  margin: -20px -10px 0px 0px;
-  width: 120px;
+  width: 80px;
+  position: absolute;
+  top: -35px;
+  right: 0px;
+}
+.rotatedFrame{
+  width: 80px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
