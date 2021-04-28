@@ -1,7 +1,23 @@
 .homeNavNotesDiv {
-  margin: 0px;
+  max-width: 15rem;
+  margin: 0px auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
+}
+@media (min-width: 750px) {
+  .homeNavNotesDiv {
+    max-width: 20rem;
+  }
+}
+@media (min-width: 1200px) {
+  .homeNavNotesDiv {
+    max-width: 100%;
+  }
+}
+@media (orientation: landscape) and (max-height: 500px){
+  .homeNavNotesDiv {
+    max-width: 100%;
+  }
 }

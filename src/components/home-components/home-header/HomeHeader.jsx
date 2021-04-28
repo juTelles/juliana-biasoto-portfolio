@@ -8,7 +8,7 @@ function HomeHeader() {
   return (
     <header className={styles.homeHeader}>
       <div className={styles.headerDiv}>
-        <PageTitle text="Juliana" hasTwoLines textLineTwo="Biastoto" margin="30px 0px 10px 0px"/>
+        <PageTitle text="Juliana" hasTwoLines textLineTwo="Biastoto"/>
       </div>
     </header>
   );

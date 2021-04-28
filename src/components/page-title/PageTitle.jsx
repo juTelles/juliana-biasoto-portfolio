@@ -11,9 +11,11 @@ function PageTitle({
   width,
   margin
 }) {
+
+  const doubleLinedTitle = hasTwoLines? 'doubleLined' : '';
   return (
     <div
-      className={hasTwoLines ? styles.hasTwoLines : styles.titleDiv}
+      className={`${styles.titleDiv} ${styles[doubleLinedTitle]}`}
       style={{ alignItems: alignText, width: width, margin: margin }}
     >
       <h1 className={styles.titleText} style={{ fontSize: fontSize }}>
