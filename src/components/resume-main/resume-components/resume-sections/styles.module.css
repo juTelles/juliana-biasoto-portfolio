@@ -13,3 +13,12 @@
     margin: 1rem;
   }
 }
+@media (min-width: 1200px) {
+  .resumeContent {
+    grid-row: 1;
+    grid-column: 2;
+    margin: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

@@ -1,9 +1,19 @@
 .panelDiv {
-  max-width: 80vw;
+  max-width: 90vw;
   display: flex;
   flex-flow: row wrap;
-  margin: 80px auto 10px auto;
-  justify-content: space-around;
+  margin: 0rem;
+  justify-content: center;
   align-items: center;
+}
 
+@media (min-width: 500px) {
+.panelDiv {
+  max-width: 90vw;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
 }

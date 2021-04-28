@@ -2,17 +2,17 @@
   margin: 0;
   grid-column: 1;
   display: flex;
-  flex-flow: row;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-start;
   min-width: fit-content;
 }
 .skillNameDiv h4 {
-  margin: 0px;
+  margin: 0;
   text-align: left;
+  font-size: 0.85rem;
 }
 .skill {
-  font-size: 0.85rem;
   width: 100%;
   margin: 0;
   grid-column: 1;
@@ -27,15 +27,18 @@
   .skill {
     margin: 0rem auto;
     font-size: 0.95rem;
-    font-size: calc(0.85rem + 0.5vmin);
     column-gap: 0.6rem;
-    column-gap: calc(0.2rem + 1vw);
     max-width: 100%;
   }
 }
 @media (min-width: 1200px) and (min-height: 700px) {
   .skill {
+    margin: 0rem auto;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 900px) {
+  .skill {
     margin: 0.1rem auto;
-    margin: calc(0.1rem + 0.3vh) auto;
   }
 }

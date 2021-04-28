@@ -1,30 +1,36 @@
+.resumeEducationDivContent {
+  width: 90%;
+  height: 100%;
+}
 .projectsDiv {
-  margin: 1.5rem 1rem;
+  margin: 2rem auto;
   width: 100%;
-  max-width: 400px;
-  max-width: calc(400px + 20vmin);
+  max-width: 500px;
+
 }
 .projectList {
   padding: 0px;
-  margin: 0 auto 1rem auto;
+  margin: 1rem 1.2rem;
 }
 .project h5 {
   font-size: 1.3rem;
+  font-size: calc(1.1rem + 0.1vw);
   line-height: 1.5rem;
+  line-height: calc(1.3rem + 0.1vw);
   margin: 1rem auto 1rem auto;
 }
 .project p {
   margin: 0 auto;
   font-size: 1rem;
+  font-size: calc(0.8rem + 0.1vw);
   line-height: 1.4rem;
+  line-height: calc(1rem + 0.1vw);
 }
-@media (min-width: 500px) {
-}
-@media (min-width: 900px) {
+
+@media (min-width: 950px) {
   .projectsDiv {
     max-width: 80%;
     column-count: 2;
-
   }
 }
 @media (min-width: 1200px) {
