@@ -2,6 +2,7 @@
 import react, { Children, useEffect, useState } from 'react';
 import Pin from '../pin/Pin';
 import styles from './styles.module.css';
+import { randomPinColor } from './../helpers/helpers';
 
 function Paper({
   children,
@@ -11,6 +12,7 @@ function Paper({
   sectionClassName,
   textClassName,
   paperSize,
+  doublePinned,
 }) {
   // eslint-disable-next-line no-unused-vars
 
@@ -20,12 +22,13 @@ function Paper({
       className={`${styles.paperDiv} ${styles[sectionClassName]}`}
     >
       <div className={styles.paper} style={{ backgroundColor: color }}>
-        <div className={styles.pinsDiv}>
-          <Pin className={styles.pin} color={pinColor} />
-          <Pin className={styles.pin} color={pinColor} />
+        <div className={doublePinned? styles.doublePinsDiv : styles.onePindDiv}>
+          <Pin className={styles.pin} color={pinColor === 'random' ? randomPinColor() : pinColor} />
+          {doublePinned ?
+          <Pin className={styles.pin} color={pinColor === 'random' ? randomPinColor() : pinColor} />
+          : ''}
         </div>
         <div className={styles.paperHeaderDiv}>
-          <h2 className={styles.paperTitle}>{title}</h2>
         </div>
         <div
           className={`${styles.paperContentDiv} ${styles[sectionClassName]}`}

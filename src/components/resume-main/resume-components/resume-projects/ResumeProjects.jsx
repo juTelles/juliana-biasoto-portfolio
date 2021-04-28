@@ -8,7 +8,7 @@ function ResumeProjects({ text }) {
 
   let id = 0;
   return (
-    <>
+    <div className="styles.resumeProjectsDivContent">
     <Sticker text={text.title}
       fontSize="1.2rem"
       margin="0.5rem auto 0 auto"
@@ -22,24 +22,26 @@ function ResumeProjects({ text }) {
     {text.projects.map((project) => {
     id += 1;
     return (
-      <Paper sectionClassName="project">
+      <div className={styles.projectsPaperDiv} key={id}>
+      <Paper doublePinned pinColor="random" sectionClassName="project">
         <div className={styles.projectList}>
           {project === '' ? (
-            <div key={id} className={styles.emptyProject}>
+            <div className={styles.emptyProject}>
               <br />
             </div>
           ) : (
-            <div key={id} className={styles.project}>
+            <div className={styles.project}>
               <h5>{project.title}</h5>
               <p>{project.description}</p>
             </div>
           )}
         </div>
       </Paper>
+    </div>
     );
   })};
   </div>
-  </>
+  </div>
   )}
 
 export default ResumeProjects;
