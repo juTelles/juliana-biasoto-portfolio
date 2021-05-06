@@ -1,39 +1,26 @@
-
 .photoDiv {
-  width: 8rem;
-  height: auto;
-  margin: 5rem auto 1.8rem auto;
-  transform: rotate(350deg);
+  width: 9rem;
+  display: flex;
+  margin: 5rem auto 2rem auto;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
   position: relative;
+}
+.polaroidDiv {
+  width: 9rem;
+  height: auto;
+  position: relative;
+  transform: rotate(-5deg);
+}
+.pinDiv {
+  position: absolute;
+  margin: 0rem 1.5rem 0 0;
   z-index: 1;
 }
 .photo {
   width: 100%;
-  height: auto;
-}
-.photo:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-@keyframes shake {
-  0% {
-    transform: translate(2px, 2px) rotate(0deg);
-  }
-  20% {
-    transform: translate(-1px, -1px) rotate(-2deg);
-  }
-  40% {
-    transform: translate(2px, 2px) rotate(5deg);
-  }
-  60% {
-    transform: translate(2px, 2px) rotate(5deg);
-  }
-  80% {
-    transform: translate(2px, 2px) rotate(5deg);
-  }
-  100% {
-    transform: translate(2px, 2px) rotate(0deg);
-  }
+  height: 100%;
 }
 .photoShadow {
   position: absolute;
@@ -46,17 +33,41 @@
   z-index: -1;
   filter: blur(2px);
 }
+.photoDiv:hover {
+  transform: scale(1.1);
+  cursor: url(../../img/red-pin.png), pointer;
+}
+.photoDiv:hover > .pinDiv{
+  margin: -0.1rem 1rem 0rem 0;
+}
 @media (min-width: 750px) {
   .photoDiv {
-    width: 12rem;
+    width: 11rem;
     margin: 8rem auto 1.8rem auto;
   }
+  .polaroidDiv {
+    width: 11rem;
+  }
 }
+
 @media (min-width: 1200px) {
+  .pinDiv {
+    margin: 0rem 1.5rem 0 0;
+  }
+  .photoDiv:hover > .pinDiv{
+    margin: 0rem 1.3rem 0rem 0;
+  }
+}
+
+@media (min-width: 1600px) {
   .photoDiv {
-    width: 10.5rem;
+    width: 12rem;
     margin: 6rem auto 1.8rem auto;
   }
+  .polaroidDiv {
+    width: 12rem;
+  }
+
 }
 @media (orientation: landscape) and (max-height: 500px){
   .photoDiv {

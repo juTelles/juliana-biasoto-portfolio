@@ -3,6 +3,7 @@ import react, { useEffect, useState } from 'react';
 import MyPhoto from '../../myphoto/MyPhoto';
 import styles from './styles.module.css';
 import HomeNavBar from '../home-navbar/HomeNavBar';
+import HomeLanguageStickers from '../home-language-stickers/HomeLanguageStickers';
 
 function HomeMain() {
 
@@ -11,6 +12,7 @@ function HomeMain() {
       <div className={styles.homeMainDiv}>
         <MyPhoto />
         <HomeNavBar isHome />
+        <HomeLanguageStickers/>
       </div>
     </section>
   );

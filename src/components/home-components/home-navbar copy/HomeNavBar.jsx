@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import react from 'react';
-import StickNote from './../../sticknote/StickNote';
+import StickNote from '../../sticknote/StickNote';
 import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
 
