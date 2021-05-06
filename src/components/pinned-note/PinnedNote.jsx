@@ -11,9 +11,15 @@ function PinnedNote({
   rotate,
   margin,
   centerText,
+  shakeNote,
 }) {
+  const shake = shakeNote ? 'shakeNote' : '';
+
   return (
-    <div onClick={onClick} className={styles.pinnedNoteDiv}>
+    <div
+      onClick={onClick}
+      className={`${styles.pinnedNoteDiv} ${styles[shake]}`}
+    >
       <div
         className={styles.pinnedNote}
         style={{ backgroundColor: color, transform: `rotate(${rotate})` }}
@@ -24,7 +30,11 @@ function PinnedNote({
           </div>
           <div
             className={styles.pinnedNoteTextDiv}
-            style={centerText === true ? { paddingTop: '0.3rem' } : {paddingTop: '0px'}}
+            style={
+              centerText === true
+                ? { paddingTop: '0.3rem' }
+                : { paddingTop: '0px' }
+            }
           >
             <p className={styles.pinnedNoteText} style={{ margin: margin }}>
               {text}

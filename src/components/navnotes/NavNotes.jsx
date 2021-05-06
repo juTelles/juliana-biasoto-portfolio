@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PinnedNote from '../pinned-note/PinnedNote';
 import styles from './styles.module.css';
 
-function NavNotes({ home, about, resume, portfolio, isHome, contact }) {
+function NavNotes({ home, about, resume, portfolio, isHome, contact, shakeNote }) {
   return (
     <div
       className={
@@ -22,6 +22,7 @@ function NavNotes({ home, about, resume, portfolio, isHome, contact }) {
             noteName="home"
             rotate="4deg"
             centerText
+            shakeNote={shakeNote}
           />
         </Link>
       )}
@@ -33,6 +34,7 @@ function NavNotes({ home, about, resume, portfolio, isHome, contact }) {
             text="Sobre Mim"
             noteName="about"
             rotate="-3deg"
+            shakeNote={shakeNote}
           />
         </Link>
       )}
@@ -44,6 +46,7 @@ function NavNotes({ home, about, resume, portfolio, isHome, contact }) {
             text={isHome? 'Currículo': 'Currí-culo'}
             noteName="resume"
             rotate="4deg"
+            shakeNote={shakeNote}
           />
         </Link>
       )}
@@ -52,9 +55,10 @@ function NavNotes({ home, about, resume, portfolio, isHome, contact }) {
           <PinnedNote
             notPinned={!isHome}
             isHome={isHome}
-            text={isHome? 'Portifólio': 'Port-fólio'}
+            text={isHome? 'Portfólio': 'Port-fólio'}
             noteName="portfolio"
             rotate="3deg"
+            shakeNote={shakeNote}
           />
         </Link>
       )}
@@ -63,10 +67,10 @@ function NavNotes({ home, about, resume, portfolio, isHome, contact }) {
           <PinnedNote
             notPinned={!isHome}
             isHome={isHome}
-            text="Contact"
+            text="Contato"
             noteName="contact"
             rotate="-2deg"
-            centerText
+            shakeNote={shakeNote}
           />
         </Link>
       )}

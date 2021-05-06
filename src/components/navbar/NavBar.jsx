@@ -41,6 +41,7 @@ function NavBar({ resume, about, portfolio, home, contact }) {
             portfolio={portfolio}
             home={home}
             contact={contact}
+            shakeNote
           />
         </div>
       )}
