@@ -5,42 +5,38 @@ export const resumeText = {
       type: 'list',
       list: [
         [
-        '2021',
-        'Em andamento',
-        'Skillcrush Coding Bootcamp',
-        'Break Into Tech Course',
+          '2021',
+          'Em andamento',
+          'Skillcrush Coding Bootcamp',
+          'Break Into Tech Course',
         ],
         [
-        '09/2020',
-        'IGTI - Full-Stack Developer Bootcamp',
-        'Certificado de Desenvolvedora Full-Stack JavaScript',
+          '09/2020',
+          'IGTI - Full-Stack Developer Bootcamp',
+          'Certificado de Desenvolvedora Full-Stack JavaScript',
+        ],
+        ['09/2020', 'Free Code Camp', 'Certificado de Web Design Responsivo'],
+        [
+          '08/2020',
+          'IGTI - Evento Data Universe',
+          'Certificado de participação',
         ],
         [
-        '09/2020',
-        'Free Code Camp',
-        'Certificado de Web Design Responsivo',
+          '05/2020',
+          'Sprint PrograMaria',
+          'Inteligência Artificial para Devs, em parceria com a Intel',
         ],
         [
-        '08/2020',
-        'IGTI - Evento Data Universe',
-        'Certificado de participação',
+          '2019',
+          'Edx - Curso do MIT',
+          'Introdução a Computação e Programação usando Python',
         ],
         [
-        '05/2020',
-        'Sprint PrograMaria',
-        'Inteligência Artificial para Devs, em parceria com a Intel',
+          '2007-2011',
+          'PUC Campinas',
+          'Graduada Bacharel em Direito',
+          'Aprovada na OAB',
         ],
-        [
-        '2019',
-        'Edx - Curso do MIT',
-        'Introdução a Computação e Programação usando Python',
-        ],
-        [
-        '2007-2011',
-        'PUC Campinas',
-        'Graduada Bacharel em Direito',
-        'Aprovada na OAB',
-        ]
       ],
     },
     languages: {
@@ -93,10 +89,11 @@ export const resumeText = {
                         as coleções. Implementei os endpoints com
                         Express, testei os middlewares com Insomnia e escrevi o tratamento de
                         erros. Fiz o deploy do aplicativo no Heroku.`,
-          link: 'grades-app-front-end.herokuapp.com/grade',
+          website: 'https://grades-app-front-end.herokuapp.com/grade',
+          sourceCode: 'https://github.com/juTelles/grades-app',
         },
         {
-          title: 'My Bank API',
+          title: 'MyBank API',
           keyWords: [
             'node',
             'API',
@@ -120,10 +117,11 @@ export const resumeText = {
                         Usando NodeJS implementei a API e a integrei ao MongoDB,
                         usei o Mongoose para estruturar o modelo do objeto json e manipular os dados.
                         Desenvolvi os endpoints com Express, testei as rotas com insomnia, e tratei possíveis erros.`,
-          link: 'github.com/juTelles/my-bank-api',
+          website: 'https://github.com/juTelles/my-bank-api',
+          sourceCode: 'https://github.com/juTelles/my-bank-api',
         },
         {
-          title: 'Compound Interest Calculator',
+          title: 'Calculadora de Juros Compostos',
           keyWords: [
             'react',
             'node',
@@ -135,10 +133,12 @@ export const resumeText = {
           description: `Desenvolvi React App para
                         calcular juros compostos. Usei React Hooks em
                         ambiente Node.js. Design em andamento.`,
-          link: 'jutelles.github.io/compound-interest-calculator/',
+          website: 'https://jutelles.github.io/compound-interest-calculator/',
+          sourceCode:
+            'https://github.com/juTelles/compound-interest-calculator',
         },
         {
-          title: 'Salary Calculator',
+          title: 'Calculadora de Salário Líquido',
           keyWords: [
             'react',
             'node',
@@ -151,10 +151,11 @@ export const resumeText = {
                         após retirado o valor do imposto de
                         renda e INSS. Usei React Class
                         Components no NodeJS. `,
-          link: 'github.com/juTelles/salary-calculator',
+          website: 'https://jutelles.github.io/salary-calculator/',
+          sourceCode: 'https://github.com/juTelles/salary-calculator',
         },
         {
-          title: 'Search Box',
+          title: 'Search Box App',
           keyWords: [
             'node',
             'assíncrono',
@@ -166,7 +167,8 @@ export const resumeText = {
           description: `Desenvolvi aplicativo Web para pesquisa de perfis. Busquei os dados de
                         uma API Web pública usando JavaScript assíncrono em ambiente NodeJS.
                         Design ainda se encontra em andamento.`,
-          link: 'jutelles.github.io/search-box/',
+          website: 'https://jutelles.github.io/search-box/',
+          sourceCode: 'https://github.com/juTelles/search-box',
         },
         {
           title: 'Radio PodCast',
@@ -181,10 +183,11 @@ export const resumeText = {
           description: `Codifiquei aplicativo JavaScript, fazendo uso de elementos HTML
                         combinados com programação reativa.
                         Os Designs são de minha autoria, utilizando principalmente CSS.`,
-          link: 'jutelles.github.io/radio-podcast',
+          website: 'https://jutelles.github.io/radio-podcast',
+          sourceCode: 'https://github.com/juTelles/radio-podcast',
         },
         {
-          title: 'Color Picker',
+          title: 'Color Picker App',
           keyWords: [
             'HTML',
             'css',
@@ -197,10 +200,11 @@ export const resumeText = {
           description: `Codifiquei aplicativo de escolha e análise de cores, tons e combinações, utilizei elementos HTML e declarações em CSS
                         combinados com JavaScript para fazer um app com programação reativa.
                         Todos os Designs são de minha autoria.`,
-          link: 'jutelles.github.io/color-picker-ranges',
+          website: 'https://jutelles.github.io/color-picker-ranges',
+          sourceCode: 'https://github.com/juTelles/color-picker-ranges',
         },
         {
-          title: 'Covid Survey',
+          title: 'Pesquisa Covid-19',
           keyWords: [
             'HTML',
             'css',
@@ -220,10 +224,11 @@ export const resumeText = {
                         apenas HTML e CSS e quando necessário JavaScript puro.
                         O design dos layout e da maioria de
                         seus elementos são de minha autoria.`,
-          link: 'codepen.io/julianatelles/full/OJyGxBp',
+          website: 'https://jutelles.github.io/covid-survey/',
+          sourceCode: 'https://github.com/juTelles/covid-survey',
         },
         {
-          title: 'JS Documentation',
+          title: 'JS Documentação',
           keyWords: [
             'HTML',
             'css',
@@ -244,10 +249,11 @@ export const resumeText = {
                         quando necessário JavaScript puro.
                         O design dos layout e da maioria de
                         seus elementos são de minha autoria.`,
-          link: 'codepen.io/julianatelles/full/GRoyEwr',
+          website: 'https://jutelles.github.io/js-documentation-page/',
+          sourceCode: 'https://github.com/juTelles/js-documentation-page',
         },
         {
-          title: 'Ada Lovelace',
+          title: 'Ada Lovelace Webpage',
           keyWords: [
             'HTML',
             'css',
@@ -266,7 +272,48 @@ export const resumeText = {
                         quando necessário JavaScript puro.
                         O design dos layout e da maioria de
                         seus elementos são de minha autoria.`,
-          link: 'codepen.io/julianatelles/full/BaoMJwj',
+          website: 'https://jutelles.github.io/ada-lovelace-tribute-page/',
+          sourceCode: 'https://github.com/juTelles/ada-lovelace-tribute-page',
+        },
+        {
+          title: 'MySheet Website',
+          keyWords: [
+            'HTML',
+            'css',
+            'JavaScript',
+            'Programação Reativa',
+            'Front-end',
+            'Web Page',
+            'Design',
+            'CodePen',
+            'responsivo',
+          ],
+          description: `Construí Website totalmente
+                        responsivo no Codepen. Implementei diversos elementos,
+                        funcionais e responsivos, usando,
+                        quando possível, apenas HTML e CSS e
+                        quando necessário JavaScript puro.
+                        O design dos layout e da maioria de
+                        seus elementos são de minha autoria.`,
+          website: 'https://jutelles.github.io/my-sheet-website/',
+          sourceCode: 'https://github.com/juTelles/my-sheet-website',
+        },
+        {
+          title: 'Jogo Magic8ball',
+          keyWords: [
+            'HTML',
+            'css',
+            'JavaScript',
+            'Programação Reativa',
+            'Front-end',
+            'Web Page',
+            'Design',
+          ],
+          description: `Programei jogo simples, em webpage, simulando a famosa magic8ball,
+          onde você faz uma pergunta, chacoalha a bola e uma resposta aparece em sua superfície.
+          Utilizei JavaScript para a lógica do jogo e CSS para estilização.`,
+          website: 'https://jutelles.github.io/magic8ball/',
+          sourceCode: 'https://github.com/juTelles/magic8ball',
         },
         {
           title: 'Unplugged Retreat Website',
@@ -279,10 +326,11 @@ export const resumeText = {
             'web design',
             'responsivo',
           ],
-          description: `Codifiquei Website totalmente
+          description: `Programei Website totalmente
                         responsivo, usando apenas com HTML e CSS,
                         a partir de um photoshop comp.`,
-          link: 'jutelles.github.io/unplugged-retreat-website',
+          website: 'https://jutelles.github.io/unplugged-retreat-website',
+          sourceCode: 'https://github.com/juTelles/unplugged-retreat-website',
         },
         {
           title: 'Rogue Pickings Website',
@@ -298,7 +346,25 @@ export const resumeText = {
           description: `Codifiquei Website totalmente
                         responsivo, usando apenas HTML e CSS,
                         a partir de um photoshop comp.`,
-          link: 'jutelles.github.io/rogue-pickings-responsive',
+          website: 'https://jutelles.github.io/rogue-pickings',
+          sourceCode: 'https://github.com/juTelles/rogue-pickings',
+        },
+        {
+          title: 'Jubille Austen Portfólio',
+          keyWords: [
+            'HTML',
+            'CSS',
+            'Front-end',
+            'Web Page',
+            'Photoshop',
+            'web design',
+            'responsivo',
+          ],
+          description: `Codifiquei Website totalmente
+                        responsivo, usando apenas HTML e CSS,
+                        a partir de um photoshop comp.`,
+          website: 'https://jutelles.github.io/jubilee-austen-repo/',
+          sourceCode: 'https://github.com/juTelles/jubilee-austen-repo',
         },
       ],
     },
