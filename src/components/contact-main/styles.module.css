@@ -1,1 +1,4 @@
-
+.contactPageSection {
+  display: flex;
+  flex-flow: column;
+}
