@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 
 function Sticker(props) {
   const {
+    specialClass,
     text,
     outerBorderColor,
     outerBorderSize,
@@ -16,11 +17,10 @@ function Sticker(props) {
     rotate,
     fontFamily,
     margin,
-    onClick,
-    name,
     innerBorderSize
   } = props;
 
+  const special = specialClass === 'contact' ? 'contactClass' : '';
   return (
     <div
       style={{
@@ -30,17 +30,17 @@ function Sticker(props) {
         padding: outerBorderSize,
         margin: margin
       }}
-      className={styles.stickerDiv}
-      onClick={() => onClick(name)}
-    >
+      className={ `${styles.stickerDiv} ${styles[special]}` }
+      >
       <div
         style={{
           backgroundColor: backgroundColor,
           borderColor: innerBorderColor,
           borderWidth: innerBorderSize,
-          padding: innerPadding
+          padding: innerPadding,
+          width: width,
         }}
-        className={styles.sticker}
+        className={ `${styles.sticker} ${styles[special]}` }
       >
         <p
           style={{ color: fontColor, fontSize: fontSize, fontFamily: fontFamily }}

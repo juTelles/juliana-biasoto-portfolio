@@ -81,6 +81,42 @@ figure {
   align-items: center;
   justify-content: center;
 }
+.fa {
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: rgb(0, 0, 0);
+  width: 1.801rem;
+  height: 1.801rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin: 0.4rem;
+}
+.fa:hover {
+  transform: scale(1.2);
+}
+.fa-facebook {
+  background-color: #55a8e7;
+}
+.fa-linkedin {
+  background-color: #0966c2;
+}
+.fa-instagram {
+  background-color: #f1891f;
+}
+.fa-twitter {
+  background-color: #1da0f2;
+}
+.fa-envelope {
+  background-color: rgb(191, 32, 101);
+}
+.fa-github {
+  background-color: #010101;
+}
+.fa-whatsapp {
+  background-color: #01e676;
+}
 
 @media (min-width: 320px) {
   html {
@@ -92,7 +128,6 @@ figure {
   html {
     font-size: 18px;
     font-size: calc(18px + 6 * ((100vw - 600px) / 850));
-
   }
   section {
     width: 80%;
@@ -105,6 +140,14 @@ figure {
   }
   section {
     width: 75%;
+  }
+  .fa {
+    border-radius: 50%;
+    padding: 0.65rem;
+    width: 2.001rem;
+    height: 2.001rem;
+    font-size: 2rem;
+    margin: 0.5rem;
   }
 }
 @media (min-width: 1600px) {
@@ -124,7 +167,7 @@ figure {
     font-size: 30px;
   }
 }
-@media (orientation: landscape) and (max-height: 500px){
+@media (orientation: landscape) and (max-height: 500px) {
   html {
     font-size: 14px;
     font-size: calc(14px + 1 * ((100vw - 900px) / 320));

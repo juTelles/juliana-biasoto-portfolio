@@ -4,9 +4,18 @@ import './styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const languages = {
+  pt: 'pt',
+  en: 'en',
+}
+
+const LanguageContext = React.createContext(languages)
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LanguageContext.Provider>
+      <App />
+    </LanguageContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -2,7 +2,7 @@
 .stickerDiv {
   width: 4.4rem;
   min-width: fit-content;
-  margin: 0.3rem 0px 0px 0px;
+  margin: 0.3rem 0 0 0;
   padding: 2.5px;
   background-color: #f5f5f5;
   border-radius: 25px;
@@ -22,6 +22,26 @@
   font-family: 'Acme', sans-serif;
   font-size: 0.9rem;
 }
-.text:hover {
+
+.stickerDiv.contactClass {
+  margin: 0.2rem 0.3rem;
+  padding: 0.3rem;
+}
+
+@media (min-height: 700px) {
+  .stickerDiv.contactClass {
+    margin: 0.7rem 0.5rem;
+    margin: calc(0.5rem + 1vh) calc(0.3rem + 1vw);
+  }
+}
+@media (min-width: 1200px) {
+  .stickerDiv.contactClass {
+    margin: 1rem;
+    margin: calc(0.4rem + 1vh) calc(0.8rem + 1vw);
+    width: 5rem;
+  }
+  .sticker.contactClass {
+    padding: 0.1rem 1.2rem;
+  }
 
 }

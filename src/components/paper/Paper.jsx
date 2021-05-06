@@ -2,15 +2,13 @@
 import react, { Children, useEffect, useState } from 'react';
 import Pin from '../pin/Pin';
 import styles from './styles.module.css';
-import { randomPinColor } from './../helpers/helpers';
+import { randomColor } from './../helpers/helpers';
 
 function Paper({
   children,
-  title,
   color,
   pinColor,
   sectionClassName,
-  textClassName,
   paperSize,
   doublePinned,
 }) {
@@ -22,14 +20,23 @@ function Paper({
       className={`${styles.paperDiv} ${styles[sectionClassName]}`}
     >
       <div className={styles.paper} style={{ backgroundColor: color }}>
-        <div className={doublePinned? styles.doublePinsDiv : styles.onePindDiv}>
-          <Pin className={styles.pin} color={pinColor === 'random' ? randomPinColor() : pinColor} />
-          {doublePinned ?
-          <Pin className={styles.pin} color={pinColor === 'random' ? randomPinColor() : pinColor} />
-          : ''}
+        <div
+          className={doublePinned ? styles.doublePinsDiv : styles.onePindDiv}
+        >
+          <Pin
+            className={styles.pin}
+            color={pinColor === 'random' ? randomColor() : pinColor}
+          />
+          {doublePinned ? (
+            <Pin
+              className={styles.pin}
+              color={pinColor === 'random' ? randomColor() : pinColor}
+            />
+          ) : (
+            ''
+          )}
         </div>
-        <div className={styles.paperHeaderDiv}>
-        </div>
+        <div className={styles.paperHeaderDiv}></div>
         <div
           className={`${styles.paperContentDiv} ${styles[sectionClassName]}`}
         >
