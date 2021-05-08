@@ -1,7 +1,7 @@
-import Header from '../components/header/Header';
-import Container from '../components/container/Container';
-import ResumeMain from '../components/resume-main/ResumeMain';
-import './../styles/index.css';
+import Header from '../../components/header/Header';
+import Container from '../../components/container/Container';
+import ResumeMain from '../../components/resume-main/ResumeMain';
+import './../../styles/index.css';
 
 function Resume() {
   return (

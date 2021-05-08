@@ -13,7 +13,7 @@ export const aboutText = {
       date: '15 de Fevereiro de 2020'
   },
   en: {
-      title: 'sobre mim',
+      title: 'About me',
       type: 'oneText',
       text: `I love animals and human beings,
          I have read so many books that I mix up their characters,

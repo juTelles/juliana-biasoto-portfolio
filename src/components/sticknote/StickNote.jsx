@@ -12,7 +12,9 @@ function StickNote({
   selected,
 }) {
   const handleClick = (noteName) => {
+    if (!isHome) {
     onClick(noteName);
+    }
   };
   const selectedClass = isHome?
   'home'
@@ -22,7 +24,7 @@ function StickNote({
   return (
 
     <div
-      onClick={!isHome ? () => handleClick(noteName) : ''}
+      onClick={() => handleClick(noteName)}
       className={`${styles.stickNoteDiv} ${styles[selectedClass]}`}
     >
       <div

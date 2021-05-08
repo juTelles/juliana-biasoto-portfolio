@@ -1,6 +1,6 @@
-import Footer from '../components/footer/Footer';
-import Header from '../components/header/Header';
-import PortfolioMain from '../components/portfolio-main/PortfolioMain';
+import Footer from '../../components/footer/Footer';
+import Header from '../../components/header/Header';
+import PortfolioMain from '../../components/portfolio-main/PortfolioMain';
 
 function portfolio() {
   return (

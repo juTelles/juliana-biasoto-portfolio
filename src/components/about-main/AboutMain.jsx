@@ -2,11 +2,10 @@
 import react, { useEffect, useState } from 'react';
 import Paper from '../paper/Paper';
 import styles from './styles.module.css';
-import { aboutText } from './aboutText';
+import { aboutText } from '../../pages/about/aboutText';
 import Frame from '../frame/Frame';
 
-function AboutMain() {
-  const text = aboutText.pt;
+function AboutMain({ text }) {
 
   return (
     <section>
