@@ -1,0 +1,21 @@
+.contactStickersAddress {
+  width: 70%;
+  margin: 0.2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+@media (min-height: 700px) {
+  .contactStickersAddress {
+    margin: 0.5rem auto;
+    margin: calc(0.3rem + 1vh) auto;
+  }
+}
+@media (min-width: 1200px) {
+  .contactStickersAddress {
+    width: 100%;
+    margin: 0.6rem auto;
+    margin: calc(0.4rem + 1vh) auto;
+  }
+}

@@ -1,0 +1,11 @@
+.resumeLinks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0 0 0;
+}
+.resumeLink:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

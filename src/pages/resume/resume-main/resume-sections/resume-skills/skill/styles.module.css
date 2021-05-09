@@ -1,0 +1,44 @@
+.skillNameDiv {
+  margin: 0;
+  grid-column: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: fit-content;
+}
+.skillNameDiv h4 {
+  margin: 0;
+  text-align: left;
+  font-size: 0.85rem;
+}
+.skill {
+  width: 100%;
+  margin: 0;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: auto;
+  font-family: 'Permanent Marker', sans-serif;
+  color: #000000;
+  column-gap: 0.4rem;
+  max-width: 12.8rem;
+}
+@media (min-width: 500px) {
+  .skill {
+    margin: 0rem auto;
+    font-size: 0.95rem;
+    column-gap: 0.6rem;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) and (min-height: 700px) {
+  .skill {
+    margin: 0rem auto;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 900px) {
+  .skill {
+    margin: 0.1rem auto;
+  }
+}

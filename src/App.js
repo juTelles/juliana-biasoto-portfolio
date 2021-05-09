@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import LanguageContext from './context/language-context';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import routes from './routes';
-import { useLocalStorage } from './hooks/localStorage';
 
 function App() {
 

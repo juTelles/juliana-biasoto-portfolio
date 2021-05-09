@@ -1,29 +1,29 @@
-import About from './pages/about/About';
-import Contact from './pages/contact/Contact';
-import Home from './pages/home/Home';
-import Portfolio from './pages/portfolio/Portfolio';
-import Resume from './pages/resume/Resume';
+import AboutPage from './pages/about/AboutPage';
+import ContactPage from './pages/contact/ContactPage';
+import HomePage from './pages/home/HomePage';
+import PortfolioPage from './pages/portfolio/PortfolioPage';
+import ResumePage from './pages/resume/ResumePage';
 
 const routes = [
   {
     path: '/about',
-    component: About,
+    component: AboutPage,
   },
   {
     path: '/portfolio',
-    component: Portfolio,
+    component: PortfolioPage,
   },
   {
     path: '/resume',
-    component: Resume,
+    component: ResumePage,
   },
   {
     path: '/contact',
-    component: Contact,
+    component: ContactPage,
   },
   {
     path: '/',
-    component: Home,
+    component: HomePage,
   },
 ];
 

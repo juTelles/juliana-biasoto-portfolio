@@ -10,12 +10,12 @@ function Header({ title, resume, about, portfolio, home, contact }) {
       <div className={styles.headerDiv}>
         <Title text={title} />
         <NavBar
-            resume={resume}
-            about={about}
-            portfolio={portfolio}
-            home={home}
-            contact={contact}
-            />
+          resume={resume}
+          about={about}
+          portfolio={portfolio}
+          home={home}
+          contact={contact}
+        />
       </div>
     </header>
   );

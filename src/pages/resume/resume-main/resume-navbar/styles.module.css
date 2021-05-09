@@ -1,0 +1,19 @@
+
+.resumeStickNotesDiv {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem auto 2rem auto;
+  grid-row: 1;
+}
+@media (min-width: 900px) {
+  .resumeStickNotesDiv {
+    margin: 1.4rem 0rem 0.7rem 0.5rem;
+    flex-flow: column;
+    grid-column: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
