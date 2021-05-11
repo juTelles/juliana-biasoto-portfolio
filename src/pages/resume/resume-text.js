@@ -55,7 +55,7 @@ export const resumeText = {
     projects: {
       title: 'Projetos',
       type: 'severalTexts',
-      projects: [
+      projectsList: [
         {
           title: 'Grades App',
           keyWords: [
