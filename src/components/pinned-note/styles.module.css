@@ -1,9 +1,10 @@
 /* pinnedNote component styles */
 .pinnedNoteDiv {
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 3.8rem;
+  height: 3.8rem;
   margin: 0.2rem;
   position: relative;
+  cursor: pointer;
 }
 .pinnedNote {
   width: 100%;
@@ -72,8 +73,8 @@
   }
 @media(min-width: 500px) {
   .pinnedNoteDiv {
-    width: 3.8rem;
-    height: 3.8rem;
+    width: 4rem;
+    height: 4rem;
     margin: 0.7rem 0.7rem 0 0;
   }
   .pinnedNoteText {
@@ -82,8 +83,8 @@
 }
 @media(min-width: 1200px) {
   .pinnedNoteDiv {
-    width: 4.2rem;
-    height: 4.2rem;
+    width: 4.4rem;
+    height: 4.4rem;
     margin: 1rem 1rem 0 0;
   }
   .pinnedNoteText {
