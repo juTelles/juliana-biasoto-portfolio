@@ -9,16 +9,14 @@ function HomeLanguageStickers() {
 
   const [lang, setLang] = useState('en');
 
-  const { changeLanguage } = useContext(LanguageContext);
+  const { updateLanguage } = useContext(LanguageContext);
 
   const handleClick = (lang) => {
     setLang(lang);
   }
   useEffect(() => {
-    changeLanguage(lang)
-    window.localStorage.setItem('@julianaPortfolio/language', lang)
-    console.log(window.localStorage.getItem('@julianaPortfolio/language'));
-  }, [lang, changeLanguage])
+    updateLanguage(lang)
+  }, [lang, updateLanguage])
 
   return (
     <div className={styles.homeLanguageStickersDiv}>
