@@ -1,6 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import react, { useContext, useEffect, useState } from 'react';
 import ContactMain from './contact-main/ContactMain';
-import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 import { contactText } from './contactText';
 import LanguageContext from '../../context/language-context';
@@ -29,7 +29,6 @@ function Contact() {
         about
       />
       <ContactMain text={text}/>
-      <Footer />
     </main>
   );
 }

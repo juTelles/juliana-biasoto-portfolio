@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import react, { useEffect, useState } from 'react';
 import PolaroidsPanel from './polaroids-panel/PolaroidsPanel';
-import styles from './styles.module.css';
 
 function PortfolioMain() {
   return (
