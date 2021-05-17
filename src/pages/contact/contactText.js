@@ -19,7 +19,7 @@ export const contactText = {
   },
   en: {
     title: 'Contact',
-    mainText: `Like my work? Want to hire me? Criticize or compliment one of my projects?
+    mainText: `Do you like my work? Want to hire me? Criticize or compliment one of my projects?
       Please feel free to reach me through any one of my social media...`,
     stickerDesignResumePDF: 'Designed Resume PDF - EN',
     designedResumeLink:'https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:8c80e203-26bb-40f0-abd5-4d3ead5a30d5',
