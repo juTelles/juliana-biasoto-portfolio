@@ -41,7 +41,7 @@
 }
 .stickNoteText {
   font-family: 'Permanent Marker', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 5px auto;
   letter-spacing: -0.5px;
 }
@@ -71,7 +71,7 @@
     margin: 0.2rem;
   }
   .stickNoteText {
-    font-size: 1rem;
+    font-size: 0.9rem;
     letter-spacing: 0px;
   }
 }
@@ -82,7 +82,7 @@
     margin: 0.4rem;
   }
   .stickNoteText {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0px;
   }
   .stickNoteDiv.home {
@@ -99,7 +99,7 @@
     margin: 0.4rem;
   }
   .stickNoteText {
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 0px;
   }
 }
@@ -110,7 +110,7 @@
     margin: 0.2rem;
   }
   .stickNoteText {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     letter-spacing: 0px;
   }
 }

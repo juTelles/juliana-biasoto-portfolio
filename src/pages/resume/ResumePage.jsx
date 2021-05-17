@@ -1,21 +1,22 @@
-import react, { useEffect, useState } from 'react';
+// eslint-disable-next-line no-unused-vars
+import react, { useContext, useEffect, useState } from 'react';
 import Header from '../../components/header/Header';
 import Container from '../../components/container/Container';
 import ResumeMain from './resume-main/ResumeMain';
 import './../../styles/index.css';
 import { resumeText } from './resume-text';
-import { useDefinedLanguage } from '../../hooks/useDefinedLanguage';
+import LanguageContext from '../../context/language-context';
 
 function Resume() {
-  const [language, setLanguage] = useState('en');
-  const [text, setText] = useState(resumeText.pt);
+  const [lang, setLang] = useState('en');
+  const [text, setText] = useState(resumeText.en);
 
-  const definedLanguage = useDefinedLanguage();
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
-    setLanguage(definedLanguage);
-    setText(language === 'en' ? resumeText.en : resumeText.pt);
-  }, [definedLanguage, language]);
+    setLang(language);
+    setText(lang === 'en' ? resumeText.en : resumeText.pt);
+  }, [lang, language]);
 
   return (
     <Container>

@@ -1,21 +1,21 @@
-import react, { useEffect, useState } from 'react';
+import react, { useContext, useEffect, useState } from 'react';
 import ContactMain from './contact-main/ContactMain';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
-import { useDefinedLanguage } from '../../hooks/useDefinedLanguage';
 import { contactText } from './contactText';
+import LanguageContext from '../../context/language-context';
 
 function Contact() {
 
-  const [language, setLanguage] = useState('en');
-  const [text, setText] = useState('');
+  const [lang, setLang] = useState('en');
+  const [text, setText] = useState(contactText.en);
 
-  const definedLanguage = useDefinedLanguage();
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
-    setLanguage(definedLanguage);
-    setText(language === 'en' ? contactText.en : contactText.pt);
-  }, [definedLanguage, language]);
+    setLang(language);
+    setText(lang === 'en' ? contactText.en : contactText.pt);
+  }, [lang, language]);
 
 
   return (

@@ -8,7 +8,7 @@ function ResumeStickNotes({ handleClick, selectedResumeSection, text }) {
   return (
     <div className={styles.resumeStickNotesDiv}>
       <StickNote
-        text={text.skills.title}
+        text={text.skills.title === 'Habilidades' ? 'Habili-dades' : text.skills.title}
         noteName="skills"
         color="#fffa92"
         onClick={handleClick}
