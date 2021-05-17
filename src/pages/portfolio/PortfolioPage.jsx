@@ -1,20 +1,20 @@
-import react, { useEffect, useState } from 'react';
+import react, { useContext, useEffect, useState } from 'react';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
-import { useDefinedLanguage } from '../../hooks/useDefinedLanguage';
+import LanguageContext from '../../context/language-context';
 import PortfolioMain from './portfolio-main/PortfolioMain';
 import { portfolioText } from './portfolioText';
 
 function PortfolioPage() {
-  const [language, setLanguage] = useState('en');
-  const [text, setText] = useState(portfolioText.pt);
+  const [lang, setLang] = useState('en');
+  const [text, setText] = useState(portfolioText.en);
 
-  const definedLanguage = useDefinedLanguage();
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
-    setLanguage(definedLanguage);
-    setText(language === 'en' ? portfolioText.en : portfolioText.pt);
-  }, [definedLanguage, language]);
+    setLang(language);
+    setText(lang === 'en' ? portfolioText.en : portfolioText.pt);
+  }, [lang, language]);
 
   return (
     <main>

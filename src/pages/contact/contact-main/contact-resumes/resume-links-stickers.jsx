@@ -5,10 +5,11 @@ import react from 'react';
 import styles from './styles.module.css';
 import Sticker from '../../../../components/sticker/Sticker';
 
-function ResumeLinksStickers({text}) {
+function ResumeLinksStickers({ text }) {
+  console.log(text);
   return (
     <div className={styles.resumeLinks}>
-      <a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:8c80e203-26bb-40f0-abd5-4d3ead5a30d5" className={styles.resumeLink}>
+      <a href={text.designedResumeLink} className={styles.resumeLink}>
         <Sticker
           text={text.stickerDesignResumePDF}
           fontColor="#a853cd"
@@ -20,7 +21,8 @@ function ResumeLinksStickers({text}) {
           width="4.3rem"
         />
       </a>
-      <a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:65371fb9-7c36-4f16-8929-84e67a20f6ec" className={styles.resumeLink}>
+      <a href={text.simpleResumeLink}
+         className={styles.resumeLink}>
         <Sticker
           text={text.stickerSimpleResumePDF}
           fontColor="#2da9b1"

@@ -34,24 +34,24 @@
     width: 100%;
     margin: 0.3rem auto;
   }
-  .Code {
+  .code {
     grid-column: 1;
     grid-row: 1 / 3;
     align-self: start;
   }
-  .Ferramentas {
+  .tools {
     grid-column: 2;
     grid-row: 1;
   }
-  .Conhecimentos {
+  .adeptness {
     grid-column: 2;
     grid-row: 2;
   }
-  .Idiomas {
+  .languages {
     grid-column: 2;
     grid-row: 3;
   }
-  .Pessoais {
+  .softSkills {
     grid-column: 1;
     grid-row: 3;
   }
@@ -62,23 +62,23 @@
     column-gap: 0.1rem;
     grid-template-columns: auto;
   }
-  .Code {
+  .code {
     grid-column: 1;
     grid-row: 1/3;
   }
-  .WebDesign {
+  .tools {
     grid-column: 2;
     grid-row: 1;
   }
-  .Dados {
+  .adeptness {
     grid-column: 2;
     grid-row: 2;
   }
-  .Idiomas {
+  .languages {
     grid-column: 3;
     grid-row: 2;
   }
-  .Pessoais {
+  .softSkills {
     grid-column: 3;
     grid-row: 1;
   }
@@ -89,23 +89,23 @@
     column-gap: 1.5rem;
     grid-template-columns: auto;
   }
-  .Code {
+  .code {
     grid-column: 1;
     grid-row: 1/3;
   }
-  .WebDesign {
+  .tools {
     grid-column: 2;
     grid-row: 1;
   }
-  .Dados {
+  .adeptness {
     grid-column: 2;
     grid-row: 2;
   }
-  .Idiomas {
+  .languages {
     grid-column: 3;
     grid-row: 2;
   }
-  .Pessoais {
+  .softSkills {
     grid-column: 3;
     grid-row: 1;
   }
