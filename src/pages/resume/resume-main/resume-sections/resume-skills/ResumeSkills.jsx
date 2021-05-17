@@ -8,11 +8,12 @@ function ResumeSkills({ text }) {
   let id = 0;
   return (
     <div className={styles.resumeSkillsDiv}>
-      {text.skillsSections.map((section) => {
+      {text.skillsSubSections.map((sub) => {
         id += 1;
-        const title = section.title;
+        const title = sub.title;
+        const subSection = sub.subSection;
         return (
-          <div key={id} className={`${styles.resumeSkillsSectionDiv} ${styles[title]}`}>
+          <div key={id} className={`${styles.resumeSkillsSectionDiv} ${styles[subSection]}`}>
             <div className={styles.skillsSectionTitleDiv}>
             <Sticker
               text={title}
@@ -22,7 +23,7 @@ function ResumeSkills({ text }) {
               />
             </div>
             <div className={styles.skillsDiv}>
-            <Skill skills={section.skills} color={section.color}/>
+            <Skill skills={sub.skills} color={sub.color}/>
             </div>
           </div>
         );

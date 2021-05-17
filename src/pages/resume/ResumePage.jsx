@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import react, { useContext, useEffect, useState } from 'react';
 import Header from '../../components/header/Header';
 import Container from '../../components/container/Container';

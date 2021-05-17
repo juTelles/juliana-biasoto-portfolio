@@ -14,7 +14,6 @@ function NavNotes({
   isHome,
   contact,
   shakeNote,
-  changeShowModal,
 }) {
   const [lang, setLang] = useState('en');
   const [text, setText] = useState(navNotesText.en);
@@ -91,14 +90,6 @@ function NavNotes({
             />
           </Link>
         )}
-        <PinnedNote
-          notPinned
-          imgNote
-          shakeNote={shakeNote}
-          rotate="1deg"
-          text={text.language === 'Language' ? 'Lan-guage' : text.language}
-          onClick={() => changeShowModal()}
-        />
       </div>
     </>
   );

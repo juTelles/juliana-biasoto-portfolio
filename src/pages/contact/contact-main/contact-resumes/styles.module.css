@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 0.7rem 0 0 0;
+  margin: 1rem 0;
 }
 .resumeLink:hover {
   cursor: pointer;

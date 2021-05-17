@@ -6,7 +6,6 @@ import HomeFooter from './home-components/home-footer/HomeFooter';
 import { homeText } from './homeText';
 import LanguageContext from '../../context/language-context';
 import styles from './styles.module.css';
-import LanguageModal from '../../components/language-modal/LanguageModal';
 
 function Home() {
   const [lang, setLang] = useState('en');
@@ -19,25 +18,11 @@ function Home() {
     setText(lang === 'en' ? homeText.en : homeText.pt);
   }, [lang, language]);
 
-  const [showModal, setShowModal] = useState(false);
-
-  const changeShowModal = () => {
-    setShowModal(!showModal);
-  };
-
   return (
     <>
       <main className={styles.mainElem}>
-      {showModal ? (
-        <div className={styles.modalDiv}>
-          <LanguageModal changeShowModal={changeShowModal}/>
-        </div>
-      ) : (
-        ''
-      )}
       <div className={styles.mainDiv}>
         <HomeHeader
-          changeShowModal={changeShowModal}
           text={text}
           about
           portfolio

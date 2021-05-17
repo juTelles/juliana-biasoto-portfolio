@@ -65,11 +65,11 @@ export const resumeText = {
             'Mongoose',
             'Express',
             'Insomnia',
-            'End-points',
+            'endpoints',
             'Winston',
             'Deploy',
             'JavaScript',
-            'Json',
+            'JSON',
             'Middleware',
             'HTTP',
             'coleções',
@@ -77,7 +77,7 @@ export const resumeText = {
             'tratamento de erros',
             'back-end',
           ],
-          description: `Desenvolvi API para registro de notas escolares no NodeJS, integrei ao MongoDB, utilizei o Mongoose para definir o modelo do objeto json e gerenciar
+          description: `Desenvolvi API para registro de notas escolares no NodeJS, integrei ao MongoDB, utilizei o Mongoose para definir o modelo do objeto JSON e gerenciar
                         as coleções. Implementei os endpoints com
                         Express, testei os middlewares com Insomnia e escrevi o tratamento de
                         erros. Fiz o deploy do aplicativo no Heroku.`,
@@ -87,17 +87,17 @@ export const resumeText = {
         {
           title: 'MyBank API',
           keyWords: [
-            'node',
+            'NodeJS',
             'API',
             'MongoDB',
             'Mongoose',
             'Express',
             'Insomnia',
-            'end-points',
+            'endpoints',
             'winston',
             'deploy',
             'JavaScript',
-            'json',
+            'JSON',
             'middleware',
             'HTTP',
             'coleções',
@@ -107,7 +107,7 @@ export const resumeText = {
           ],
           description: `Desenvolvi Web App que realiza operações bancárias simples.
                         Usando NodeJS implementei a API e a integrei ao MongoDB,
-                        usei o Mongoose para estruturar o modelo do objeto json e manipular os dados.
+                        usei o Mongoose para estruturar o modelo do objeto JSON e manipular os dados.
                         Desenvolvi os endpoints com Express, testei as rotas com insomnia, e tratei possíveis erros.`,
           website: 'https://github.com/juTelles/my-bank-api',
           sourceCode: 'https://github.com/juTelles/my-bank-api',
@@ -116,7 +116,7 @@ export const resumeText = {
           title: 'Calculadora de Juros Compostos',
           keyWords: [
             'react',
-            'node',
+            'NodeJS',
             'hooks',
             'yarn',
             'front-end',
@@ -124,7 +124,7 @@ export const resumeText = {
           ],
           description: `Desenvolvi React App para
                         calcular juros compostos. Usei React Hooks em
-                        ambiente Node.js. Design em andamento.`,
+                        ambiente NodeJS. Design em andamento.`,
           website: 'https://jutelles.github.io/compound-interest-calculator/',
           sourceCode:
             'https://github.com/juTelles/compound-interest-calculator',
@@ -133,7 +133,7 @@ export const resumeText = {
           title: 'Calculadora de Salário Líquido',
           keyWords: [
             'react',
-            'node',
+            'NodeJS',
             'class',
             'yarn',
             'front-end',
@@ -149,7 +149,7 @@ export const resumeText = {
         {
           title: 'Search Box App',
           keyWords: [
-            'node',
+            'NodeJS',
             'assíncrono',
             'API',
             'JavaScript',
@@ -375,9 +375,10 @@ export const resumeText = {
     skills: {
       title: 'Habilidades',
       type: 'skills',
-      skillsSections: [
+      skillsSubSections: [
         {
           title: 'Code',
+          subSection: 'code',
           color: 'pink',
           skills: [
             {
@@ -390,7 +391,7 @@ export const resumeText = {
               level: 4,
             },
             {
-              name: 'Node.js',
+              name: 'NodeJS',
               level: 4,
             },
             {
@@ -429,6 +430,7 @@ export const resumeText = {
         },
         {
           title: 'Ferramentas',
+          subSection: 'tools',
           color: 'blue',
           skills: [
             {
@@ -455,6 +457,7 @@ export const resumeText = {
         },
         {
           title: 'Conhecimentos',
+          subSection: 'adeptness',
           color: 'yellow',
           skills: [
             {
@@ -477,6 +480,7 @@ export const resumeText = {
         },
         {
           title: 'Idiomas',
+          subSection: 'languages',
           color: 'green',
           skills: [
             {
@@ -491,6 +495,7 @@ export const resumeText = {
         },
         {
           title: 'Pessoais',
+          subSection: 'softSkills',
           color: 'purple',
           skills: [
             {
@@ -576,62 +581,62 @@ export const resumeText = {
         {
           title: 'Grades App',
           keyWords: [
-            'node',
+            'NodeJS',
             'API',
             'MongoDB',
             'Mongoose',
             'Express',
             'Insomnia',
-            'end-points',
+            'endpoints',
             'winston',
             'deploy',
             'JavaScript',
-            'json',
+            'JSON',
             'middleware',
             'HTTP',
             'collections',
             'heroku',
-            'error treatment',
+            'error handling',
             'back-end',
           ],
-          description: `Programmed API to register grades.
-                        Used Node.js with Nodemon to accelerate development,
-                        assembled MongoDB as the API’s database,
-                        used Mongoose to define the json's object model
-                        and manage collections.
-                        Implemented the end-points for HTTP requests with Express,
-                        tested the routes with Insomnia and wrote error treatment.
-                        Deployed the application and its front-end in Heroku.`,
+          description: `I programmed an API to register grades.
+          I used NodeJS with Nodemon to accelerate development,
+          assembled MongoDB as the API’s database,
+          used Mongoose to define the JSON's object model
+          and manage collections.
+          I implemented the endpoints for HTTP requests with Express,
+          tested the routes with Insomnia and wrote error handling.
+          I deployed the application and its front-end in Heroku.`,
           website: 'https://grades-app-front-end.herokuapp.com/grade',
           sourceCode: 'https://github.com/juTelles/grades-app',
         },
         {
           title: 'My Bank API',
           keyWords: [
-            'node',
+            'NodeJS',
             'API',
             'MongoDB',
             'Mongoose',
             'Express',
             'Insomnia',
-            'end-points',
+            'endpoints',
             'winston',
             'deploy',
             'JavaScript',
-            'json',
+            'JSON',
             'middleware',
             'HTTP',
             'collections',
             'heroku',
-            'error treatment',
+            'error handling',
             'back-end',
           ],
-          description: `Developed API to perform simple bank operations.
-                        Using Node.js, implemented the API and integrated to MongoDB,
-                        used Mongoose to structure the json’s object model of the data
-                        and manipulate it. Programmed the end-points for the consumption of
-                        the API with Express, tested the routes with insomnia
-                        and wrote error treatment. `,
+          description: `I developed an API to perform simple bank operations.
+          Using NodeJS I implemented the API and integrated to MongoDB,
+          I used Mongoose to structure the JSON’s object model of the data
+          and manipulate it. I programmed the endpoints for the consumption of
+          the API with Express, tested the routes with insomnia
+          and wrote error handling.`,
           website: 'https://github.com/juTelles/my-bank-api',
           sourceCode: 'https://github.com/juTelles/my-bank-api',
         },
@@ -639,16 +644,16 @@ export const resumeText = {
           title: 'Compound Interest Calculator',
           keyWords: [
             'react',
-            'node',
+            'NodeJS',
             'hooks',
             'yarn',
             'front-end',
             'JavaScript',
           ],
-          description: `Developed React web app that works as
-                        a compound interest calculator.
-                        Used React Hooks in Node.js with Yarn as package manager.
-                        App’s design is still in progress.`,
+          description: `I developed a React web app that works as
+          a compound interest calculator.
+          I used React Hooks in NodeJS with Yarn as package manager.
+          App’s design is still in progress.`,
           website: 'https://jutelles.github.io/compound-interest-calculator/',
           sourceCode:
             'https://github.com/juTelles/compound-interest-calculator',
@@ -657,31 +662,33 @@ export const resumeText = {
           title: 'Salary Calculator',
           keyWords: [
             'react',
-            'node',
+            'NodeJS',
             'class',
             'yarn',
             'front-end',
             'JavaScript',
           ],
-          description: `Coded React web app to calculate the user's
-                        salary after Brazilian income taxes.
-                        Implemented the app’s logic with React components
-                        in Node.js with Yarn as package manager`,
+          description: `I coded a React web app to calculate the user's
+          salary after Brazilian income taxes.
+          I implemented the app’s logic with React components
+          in NodeJS with Yarn as package manager.`,
           website: 'https://jutelles.github.io/salary-calculator/',
           sourceCode: 'https://github.com/juTelles/salary-calculator',
         },
         {
           title: 'Search Box',
           keyWords: [
-            'node',
+            'NodeJS',
             'asynchronous',
             'API',
             'JavaScript',
             'yarn',
             'front-end',
           ],
-          description: `Programmed web application for searching public profiles.
-                        Implemented asynchronous JavaScript to fetch the profiles`,
+          description: `I programmed a web application for searching public profiles.
+           I implemented asynchronous JavaScript to fetch the profiles from a public
+            Web API in the NodeJS environment.
+           The Design of the app is still in development.`,
           website: 'https://jutelles.github.io/search-box/',
           sourceCode: 'https://github.com/juTelles/search-box',
         },
@@ -695,9 +702,9 @@ export const resumeText = {
             'Front-end',
             'Web Page',
           ],
-          description: `Coded JavaScript app making use of HTML
-                        elements combined with reactive programming.
-                        Made the designs myself, using mostly CSS.`,
+          description: `I coded a JavaScript app making use of HTML
+          elements combined with reactive programming.
+          I made the designs myself, using mostly CSS.`,
           website: 'https://jutelles.github.io/radio-podcast',
           sourceCode: 'https://github.com/juTelles/radio-podcast',
         },
@@ -712,9 +719,9 @@ export const resumeText = {
             'Web Page',
             'Design',
           ],
-          description: `Coded JavaScript app making use of HTML
-                        elements combined with reactive programming.
-                        Made the designs myself, using mostly CSS.`,
+          description: `I coded a JavaScript app making use of HTML
+          elements combined with reactive programming.
+          I made the designs myself, using mostly CSS.`,
           website: 'https://jutelles.github.io/color-picker-ranges',
           sourceCode: 'https://github.com/juTelles/color-picker-ranges',
         },
@@ -733,11 +740,11 @@ export const resumeText = {
             'web design',
             'responsive',
           ],
-          description: `Developed fully responsive websites in Codepen.
-                        Implemented responsive menus, forms and reactive
-                        programming using, when possible, only HTML and CSS and,
-                        when necessary, pure JavaScript.
-                        Made the designs of the layouts and most of its elements. `,
+          description: `I developed a fully responsive Website in Codepen.
+          I implemented responsive menus, forms and reactive
+          programming using, when possible, only HTML and CSS and,
+          when necessary, pure JavaScript.
+          I made the designs of the layouts and most of its elements.`,
           website: 'https://jutelles.github.io/covid-survey/',
           sourceCode: 'https://github.com/juTelles/covid-survey',
         },
@@ -756,11 +763,11 @@ export const resumeText = {
             'responsive',
             'documentation',
           ],
-          description: `Developed fully responsive websites in Codepen.
-                        Implemented responsive menus, forms and reactive
-                        programming using, when possible, only HTML and CSS and,
-                        when necessary, pure JavaScript.
-                        Made the designs of the layouts and most of its elements. `,
+          description: `I developed a fully responsive Website in Codepen.
+          I implemented responsive menus and reactive
+          programming using, when possible, only HTML and CSS and,
+          when necessary, pure JavaScript.
+          I made the designs of the layouts and most of its elements.`,
           website: 'https://jutelles.github.io/js-documentation-page/',
           sourceCode: 'https://github.com/juTelles/js-documentation-page',
         },
@@ -778,11 +785,11 @@ export const resumeText = {
             'web design',
             'responsive',
           ],
-          description: `Developed fully responsive websites in Codepen.
-                        Implemented responsive menus, forms and reactive
-                        programming using, when possible, only HTML and CSS and,
-                        when necessary, pure JavaScript.
-                        Made the designs of the layouts and most of its elements.`,
+          description: `I developed a fully responsive Website in Codepen.
+          I implemented responsive menus and reactive
+          programming using, when possible, only HTML and CSS and,
+          when necessary, pure JavaScript.
+          I made the designs of the layouts and most of its elements.`,
           website: 'https://jutelles.github.io/ada-lovelace-tribute-page/',
           sourceCode: 'https://github.com/juTelles/ada-lovelace-tribute-page',
         },
@@ -799,11 +806,11 @@ export const resumeText = {
             'CodePen',
             'responsivo',
           ],
-          description: `Developed fully responsive websites in Codepen.
-          Implemented responsive menus, forms and reactive
+          description: `I developed a fully responsive Website in Codepen.
+          I implemented responsive menus and reactive
           programming using, when possible, only HTML and CSS and,
           when necessary, pure JavaScript.
-          Made the designs of the layouts and most of its elements.`,
+          I made the designs of the layouts and most of its elements.`,
           website: 'https://jutelles.github.io/my-sheet-website/',
           sourceCode: 'https://github.com/juTelles/my-sheet-website',
         },
@@ -818,10 +825,10 @@ export const resumeText = {
             'Web Page',
             'Design',
           ],
-          description: `Programmed simple Magic8Ball game in webpage,
-                      famous game where you make a question and shakes
-                      the ball for a answer to appear in it's surface.
-                      Made using JavaScript for the logic and CSS for styling.`,
+          description: `I programmed a simple Magic 8 Ball game, it’s a
+          famous game where you make a question and shakes
+          the ball for an answer to appear on its surface.
+          I made the game using JavaScript for the logic and CSS for styling.`,
           website: 'https://jutelles.github.io/magic8ball/',
           sourceCode: 'https://github.com/juTelles/magic8ball',
         },
@@ -836,8 +843,8 @@ export const resumeText = {
             'web design',
             'responsive',
           ],
-          description: `Programmed fully responsive website
-                        with HTML and CSS from a photoshop comp.`,
+          description: `I programmed a fully responsive Website
+          with HTML and CSS from a photoshop comp.`,
           website: 'https://jutelles.github.io/unplugged-retreat-website',
           sourceCode: 'https://github.com/juTelles/unplugged-retreat-website',
         },
@@ -852,8 +859,8 @@ export const resumeText = {
             'web design',
             'responsive',
           ],
-          description: `Programmed fully responsive website
-                        with HTML and CSS from a photoshop comp.`,
+          description: `I programmed a fully responsive Website
+          with HTML and CSS from a photoshop comp.`,
           website: 'https://jutelles.github.io/rogue-pickings',
           sourceCode: 'https://github.com/juTelles/rogue-pickings',
         },
@@ -868,8 +875,8 @@ export const resumeText = {
             'web design',
             'responsivo',
           ],
-          description: `Programmed fully responsive website
-                          with HTML and CSS from a photoshop comp.`,
+          description: `I programmed a fully responsive Website
+          with HTML and CSS from a photoshop comp.`,
           website: 'https://jutelles.github.io/jubilee-austen-repo/',
           sourceCode: 'https://github.com/juTelles/jubilee-austen-repo',
         },
@@ -890,9 +897,10 @@ export const resumeText = {
     skills: {
       title: 'Skills',
       type: 'skills',
-      skillsSections: [
+      skillsSubSections: [
         {
           title: 'Code',
+          subSection: 'code',
           color: 'pink',
           skills: [
             {
@@ -905,7 +913,7 @@ export const resumeText = {
               level: 4,
             },
             {
-              name: 'Node.js',
+              name: 'NodeJS',
               level: 4,
             },
             {
@@ -944,6 +952,7 @@ export const resumeText = {
         },
         {
           title: 'Tools',
+          subSection: 'tools',
           color: 'blue',
           skills: [
             {
@@ -970,6 +979,7 @@ export const resumeText = {
         },
         {
           title: 'Adeptness',
+          subSection: 'adeptness',
           color: 'yellow',
           skills: [
             {
@@ -992,6 +1002,7 @@ export const resumeText = {
         },
         {
           title: 'Languages',
+          subSection: 'languages',
           color: 'green',
           skills: [
             {
@@ -1006,6 +1017,7 @@ export const resumeText = {
         },
         {
           title: 'SoftSkills',
+          subSection: 'softSkills',
           color: 'purple',
           skills: [
             {

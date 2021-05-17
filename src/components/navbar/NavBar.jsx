@@ -5,7 +5,7 @@ import NavNotes from '../navnotes/NavNotes';
 import PinnedNote from '../pinned-note/PinnedNote';
 import styles from './styles.module.css';
 
-function NavBar({ changeShowModal, resume, about, portfolio, home, contact }) {
+function NavBar({ resume, about, portfolio, home, contact }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const handleClickMenu = () => {
@@ -42,7 +42,6 @@ function NavBar({ changeShowModal, resume, about, portfolio, home, contact }) {
             home={home}
             contact={contact}
             shakeNote
-            changeShowModal={changeShowModal}
           />
         </div>
       )}

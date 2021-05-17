@@ -6,25 +6,42 @@ import { useContext } from 'react';
 import LanguageContext from './../../../../../context/language-context';
 
 function HomeLanguageStickers() {
-
   const [lang, setLang] = useState('en');
 
   const { updateLanguage } = useContext(LanguageContext);
 
   const handleClick = (lang) => {
     setLang(lang);
-  }
+  };
   useEffect(() => {
-    updateLanguage(lang)
-  }, [lang, updateLanguage])
+    updateLanguage(lang);
+  }, [lang, updateLanguage]);
 
   return (
     <div className={styles.homeLanguageStickersDiv}>
-      <div onClick={() => handleClick('pt')}>
-        <Sticker text={'Portugues'} />
+      <div
+        className={styles.languageStickerDiv}
+        onClick={() => handleClick('pt')}
+      >
+        <Sticker
+          text={'Português'}
+          backgroundColor={lang === 'pt' ? 'black' : 'white'}
+          fontColor={lang === 'pt' ? 'white' : 'black'}
+          fontSize="0.7rem"
+          width="2.9rem"
+        />
       </div>
-      <div onClick={() => handleClick('en')}>
-        <Sticker text={'English'} />
+      <div
+        className={styles.languageStickerDiv}
+        onClick={() => handleClick('en')}
+      >
+        <Sticker
+          text={'English'}
+          backgroundColor={lang === 'en' ? 'black' : 'white'}
+          fontColor={lang === 'en' ? 'white' : 'black'}
+          fontSize="0.7rem"
+          width="2.9rem"
+        />
       </div>
     </div>
   );
