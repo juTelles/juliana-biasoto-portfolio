@@ -113,6 +113,25 @@ export const resumeText = {
           sourceCode: 'https://github.com/juTelles/my-bank-api',
         },
         {
+          title: 'Juliana Biasoto Portfolio',
+          keyWords: [
+            'react',
+            'NodeJS',
+            'Hooks',
+            'yarn',
+            'front-end',
+            'JavaScript',
+            'React Router',
+            'CSS Modules',
+            'Photoshop',
+            'Illustrator',
+          ],
+          description: `Programei um React Web App para ser meu WebSite e Portfólio. No ambiente NodeJS eu utilizei o React Router para o cuidar do routing e o CSS Modules para manter meus estilos organizados. Meu portfólio tem muitos elementos gráficos, a maioria feito por mim no Photoshop, Illustrator ou com CSS, muitos deles foram programados para serem responsivos e divertidos.
+Eu fiz deploy do meu App no meu próprio domínio em um servidor compartilhado.`,
+          website: 'https://julianabiasoto.com',
+          sourceCode: 'https://github.com/juTelles/juliana-biasoto-portfolio',
+        },
+        {
           title: 'Calculadora de Juros Compostos',
           keyWords: [
             'react',
@@ -631,14 +650,28 @@ export const resumeText = {
             'error handling',
             'back-end',
           ],
-          description: `I developed an API to perform simple bank operations.
-          Using NodeJS I implemented the API and integrated to MongoDB,
-          I used Mongoose to structure the JSON’s object model of the data
-          and manipulate it. I programmed the endpoints for the consumption of
-          the API with Express, tested the routes with insomnia
-          and wrote error handling.`,
+          description: `I developed an API to perform simple bank operations. Using NodeJS I implemented the API and integrated it into MongoDB. I used Mongoose to structure the JSON’s object model of the data and manipulate it. I programmed the endpoints for the consumption of the API with Express, tested the routes with insomnia and wrote error handling.`,
           website: 'https://github.com/juTelles/my-bank-api',
           sourceCode: 'https://github.com/juTelles/my-bank-api',
+        },
+        {
+          title: 'Juliana Biasoto Portfolio',
+          keyWords: [
+            'react',
+            'NodeJS',
+            'Hooks',
+            'yarn',
+            'front-end',
+            'JavaScript',
+            'React Router',
+            'CSS Modules',
+            'Photoshop',
+            'Illustrator',
+          ],
+          description: `I coded a React Web App to serve as my professional Website and Portfolio. In the NodeJS environment I used React Router to take care of routing and CSS Modules to keep my styles organized. My portfolio has several graphical elements, most made by me in Photoshop, Illustrator, or with CSS, and many are coded to be responsive and fun.
+          I deployed the application in my own domain in a shared server.`,
+          website: 'https://julianabiasoto.com',
+          sourceCode: 'https://github.com/juTelles/juliana-biasoto-portfolio',
         },
         {
           title: 'Compound Interest Calculator',
@@ -826,7 +859,7 @@ export const resumeText = {
             'Design',
           ],
           description: `I programmed a simple Magic 8 Ball game, it’s a
-          famous game where you make a question and shakes
+          famous game where you make a question and shake
           the ball for an answer to appear on its surface.
           I made the game using JavaScript for the logic and CSS for styling.`,
           website: 'https://jutelles.github.io/magic8ball/',
