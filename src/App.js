@@ -5,18 +5,20 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import routes from './routes';
 
 function App() {
-  const getLanguage = () => {
+  const getLocalStorageLanguage = () => {
     const storedLanguage = window.localStorage.getItem(
       '@julianaPortfolio/language'
     );
     return storedLanguage;
   };
+  const updateLocalStorageLanguage = (value) => {
+    window.localStorage.setItem('@julianaPortfolio/language', value);
+    setLanguageState(value);
+  };
 
   const browserLang = window.navigator.language;
-  const storedLanguage = window.localStorage.getItem(
-    '@julianaPortfolio/language'
-  );
-  console.log([browserLang, storedLanguage]);
+  const storedLanguage = getLocalStorageLanguage();
+
   const initialLang =
     storedLanguage !== null
       ? storedLanguage
@@ -24,24 +26,20 @@ function App() {
       ? 'pt'
       : 'en';
 
-  const [language, setLanguage] = useState(initialLang);
+  const [languageState, setLanguageState] = useState(initialLang);
 
-  const updateLanguage = (value) => {
-    window.localStorage.setItem('@julianaPortfolio/language', value);
-    setLanguage(value);
-  };
 
   useEffect(() => {
-    const lang = getLanguage();
-    setLanguage(lang);
+    const lang = getLocalStorageLanguage();
+    setLanguageState(lang);
   }, []);
 
   return (
     <LanguageContext.Provider
       value={{
-        language,
-        updateLanguage,
-        getLanguage,
+        languageState,
+        updateLocalStorageLanguage,
+        getLocalStorageLanguage,
       }}
     >
       <Router>

@@ -8,21 +8,20 @@ import { resumeText } from './resume-text';
 import LanguageContext from '../../context/language-context';
 
 function Resume() {
-  const [lang, setLang] = useState('en');
+  const [language, setLanguage] = useState('en');
   const [text, setText] = useState(resumeText.en);
 
-  const { language } = useContext(LanguageContext);
+  const { languageState } = useContext(LanguageContext);
 
   useEffect(() => {
-    setLang(language);
-    setText(lang === 'en' ? resumeText.en : resumeText.pt);
-  }, [lang, language]);
+    setLanguage(languageState);
+    setText(language === 'en' ? resumeText.en : resumeText.pt);
+  }, [language, languageState]);
 
   return (
     <Container>
       <Header
         title={text.title}
-        className="resume-header"
         home
         portfolio
         about

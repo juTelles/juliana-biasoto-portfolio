@@ -6,21 +6,20 @@ import PortfolioMain from './portfolio-main/PortfolioMain';
 import { portfolioText } from './portfolioText';
 
 function PortfolioPage() {
-  const [lang, setLang] = useState('en');
+  const [language, setLanguage] = useState('en');
   const [text, setText] = useState(portfolioText.en);
 
-  const { language } = useContext(LanguageContext);
+  const { languageState } = useContext(LanguageContext);
 
   useEffect(() => {
-    setLang(language);
-    setText(lang === 'en' ? portfolioText.en : portfolioText.pt);
-  }, [lang, language]);
+    setLanguage(languageState);
+    setText(language === 'en' ? portfolioText.en : portfolioText.pt);
+  }, [language, languageState]);
 
   return (
     <main>
       <Header
-        title="Portfolio"
-        className="portfolio-header"
+        title={text.title}
         home
         about
         resume

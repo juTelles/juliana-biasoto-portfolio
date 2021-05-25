@@ -8,15 +8,15 @@ import LanguageContext from '../../context/language-context';
 import styles from './styles.module.css';
 
 function Home() {
-  const [lang, setLang] = useState('en');
+  const [language, setLanguage] = useState('en');
   const [text, setText] = useState(homeText.en);
 
-  const { language } = useContext(LanguageContext);
+  const { languageState } = useContext(LanguageContext);
 
   useEffect(() => {
-    setLang(language);
-    setText(lang === 'en' ? homeText.en : homeText.pt);
-  }, [lang, language]);
+    setLanguage(languageState);
+    setText(language === 'en' ? homeText.en : homeText.pt);
+  }, [language, languageState]);
 
   return (
     <>

@@ -6,16 +6,18 @@ import { useContext } from 'react';
 import LanguageContext from './../../../../../context/language-context';
 
 function HomeLanguageStickers() {
-  const [lang, setLang] = useState('en');
 
-  const { updateLanguage } = useContext(LanguageContext);
+  const { updateLocalStorageLanguage, languageState } = useContext(LanguageContext);
+
+  const [lang, setLang] = useState(languageState);
 
   const handleClick = (lang) => {
     setLang(lang);
   };
+
   useEffect(() => {
-    updateLanguage(lang);
-  }, [lang, updateLanguage]);
+    updateLocalStorageLanguage(lang);
+  }, [lang, updateLocalStorageLanguage]);
 
   return (
     <div className={styles.homeLanguageStickersDiv}>

@@ -7,22 +7,21 @@ import LanguageContext from '../../context/language-context';
 
 function Contact() {
 
-  const [lang, setLang] = useState('en');
+  const [language, setLanguage] = useState('en');
   const [text, setText] = useState(contactText.en);
 
-  const { language } = useContext(LanguageContext);
+  const { languageState } = useContext(LanguageContext);
 
   useEffect(() => {
-    setLang(language);
-    setText(lang === 'en' ? contactText.en : contactText.pt);
-  }, [lang, language]);
+    setLanguage(languageState);
+    setText(language === 'en' ? contactText.en : contactText.pt);
+  }, [language, languageState]);
 
 
   return (
     <main>
       <Header
         title={text.title}
-        className="contact-header"
         home
         portfolio
         resume

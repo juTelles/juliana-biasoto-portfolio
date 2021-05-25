@@ -15,15 +15,15 @@ function NavNotes({
   contact,
   shakeNote,
 }) {
-  const [lang, setLang] = useState('en');
+  const [language, setLanguage] = useState('en');
   const [text, setText] = useState(navNotesText.en);
 
-  const { language } = useContext(LanguageContext);
+  const { languageState } = useContext(LanguageContext);
 
   useEffect(() => {
-    setLang(language);
-    setText(lang === 'en' ? navNotesText.en : navNotesText.pt);
-  }, [lang, language]);
+    setLanguage(languageState);
+    setText(language === 'en' ? navNotesText.en : navNotesText.pt);
+  }, [language, languageState]);
 
   return (
     <>

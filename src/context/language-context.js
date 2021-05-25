@@ -1,9 +1,9 @@
 import React from 'react';
 
  const LanguageContext = React.createContext({
-  language: 'en',
-  updateLanguage: () => {},
-  getLanguage: () => {},
+  languageState: 'en',
+  updateLocalStorageLanguage: () => {},
+  getLocalStirageLanguage: () => {},
 });
 
 export default LanguageContext;

@@ -7,15 +7,15 @@ import { aboutText } from './aboutText';
 import LanguageContext from '../../context/language-context';
 
 function About() {
-  const [lang, setLang] = useState('en');
+  const [language, setLanguage] = useState('en');
   const [text, setText] = useState(aboutText.en);
 
-  const { language } = useContext(LanguageContext);
+  const { languageState } = useContext(LanguageContext);
 
   useEffect(() => {
-    setLang(language);
-    setText(lang === 'en' ? aboutText.en : aboutText.pt);
-  }, [lang, language]);
+    setLanguage(languageState);
+    setText(language === 'en' ? aboutText.en : aboutText.pt);
+  }, [language, languageState]);
 
   return (
     <Container>
