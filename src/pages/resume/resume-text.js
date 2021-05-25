@@ -588,10 +588,7 @@ Eu fiz deploy do meu App no meu próprio domínio em um servidor compartilhado.`
     current: {
       title: 'Current work',
       type: 'oneText',
-      text: `Currently I am working on the front-end portion of a workout and nutrition App, that is supposed to be used by iphone users in the web view.
-            The app is made with  React, redux, react router, styled components and axios.
-            My work is to fix and finish the already partially made app, the challenge is that several unrelated programmers have made some portion of the source code without concern to harmonizing their work with what was already there and now we have a big mess to organize, structure and fix, the good side of this is that I love a good challenge.
-            I can't disponibilize the source code or any images at this moment.`,
+      text: `I have been hired to finish the front-end portion of a workout and nutrition app for Iphone (web view). The app uses React, Redux, React Router, Styled Component and Axios.`,
     },
     projects: {
       title: 'Projects',
